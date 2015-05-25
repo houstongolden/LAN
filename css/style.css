@@ -1,0 +1,11 @@
+/* CSS Document */
+
+
+
+.wrapper-landing-header{
+    background-image: url('../images/banner.jpg');
+    background-repeat: no-repeat;
+    min-height: 658px;
+    width: 100%;
+    
+}
