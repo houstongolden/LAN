@@ -326,4 +326,9 @@ color: #4a575b;
     text-transform: uppercase;
     
 }
+#googleMap{
+    
+    width:100%;
+    height:330px;
+}
 /* Landing Section Map View ends here */
