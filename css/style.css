@@ -92,6 +92,14 @@ color: #4a575b !important;
     margin-left: -21px;
     position: absolute;
 }
+#second-menu.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    border-bottom: 5px solid #ffffff;
+}
 .wrapper-landing-header-2{
        border-bottom: 1px solid #c6ccd1; 
   min-height: 88px;
@@ -564,6 +572,7 @@ background-position: 0 9px;
 .wrapper-landing-header .banner-heading {
     font-size: 2em;
     padding-top: 17px;
+    line-height: 1.7;
 }
 .wrapper-landing-header .free-signup {
     font-size: 0.4em;
@@ -602,14 +611,7 @@ background-position: 0 9px;
 }
 
 
-#second-menu.fixed {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    width: 100%;
-    border-bottom: 5px solid #ffffff;
-}
+
 }
 
 
