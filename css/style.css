@@ -5,7 +5,11 @@ body{
     font-family: 'Open Sans', sans-serif;
 
 }
-
+body a{
+    outline: none !important;
+    
+    
+}
 
 /* Landing Header */
 .wrapper-landing-header{
@@ -40,23 +44,26 @@ body{
     padding: 10px 23px;
    font-size: 0.9em;
 }
-.wrapper-landing-header .navbar ul li a:hover, .wrapper-landing-header .navbar ul li a:active, .wrapper-landing-header .navbar ul li a:active{
+
+
+.wrapper-landing-header .navbar ul li a:hover, .wrapper-landing-header .navbar ul li a:active, .wrapper-landing-header .navbar ul li a:focus{
    
-   color: #fff;
-   font-weight: 800
+   color: #fff !important;
     
 }
+
 .wrapper-landing-header .navbar ul .sign-up a{
   border: 1px solid #e5e2e0;
     
 }
-.wrapper-landing-header .navbar ul .sign-up a:hover, .wrapper-landing-header .navbar ul .sign-up a:active, .wrapper-landing-header .navbar ul .sign-up a:active{
-color: #4a575b; 
+.wrapper-landing-header .navbar ul .sign-up a:hover, .wrapper-landing-header .navbar ul .sign-up a:focus, .wrapper-landing-header .navbar ul .sign-up a:active{
+color: #4a575b !important;
     
 }
-.wrapper-landing-header .navbar ul .sign-up:hover{
+
+.wrapper-landing-header .navbar ul .sign-up:hover, .wrapper-landing-header .navbar ul .sign-up:focus, .wrapper-landing-header .navbar ul .sign-up:active{
     
-  background-color: #ffffff;  
+  background-color: #ffffff !important; 
 }
 .wrapper-landing-header .banner-heading{
   color: #fff;
@@ -65,6 +72,7 @@ color: #4a575b;
     line-height: 1.25;
    padding-top: 160px;
     text-align: center;
+    padding-bottom: 40px;
     
 }
 .wrapper-landing-header .free-signup{
@@ -80,7 +88,7 @@ color: #4a575b;
     
 }
 .wrapper-landing-header .static-mao{
-  bottom: 0;
+  bottom: 15px;
     margin-left: -21px;
     position: absolute;
 }
@@ -107,10 +115,10 @@ color: #4a575b;
     padding: 10px 23px;
    font-size: 0.9em;
 }
-.wrapper-landing-header-2 .navbar ul li a:hover, .wrapper-landing-header-2 .navbar ul li a:active, .wrapper-landing-header-2 .navbar ul li a:active{
+.wrapper-landing-header-2 .navbar ul li a:hover, .wrapper-landing-header-2 .navbar ul li a:focus, .wrapper-landing-header-2 .navbar ul li a:active{
    
-   color: #1d7ad0;
-   font-weight: 800
+   color: #1d7ad0 !important;
+   
     
 }
 .wrapper-landing-header-2 .navbar ul .sign-up a{
@@ -118,9 +126,9 @@ color: #4a575b;
   color: #fff;
     
 }
-.wrapper-landing-header-2 .navbar ul .sign-up a:hover, .wrapper-landing-header-2 .navbar ul .sign-up a:active, .wrapper-landing-header-2 .navbar ul .sign-up a:active{
-     color: #fff; 
-      background-color: #9fa8aa;  
+.wrapper-landing-header-2 .navbar ul .sign-up a:hover, .wrapper-landing-header-2 .navbar ul .sign-up a:focus, .wrapper-landing-header-2 .navbar ul .sign-up a:active{
+     color: #fff !important;
+      background-color: #9fa8aa !important;  
 }
 
 /* Landing Header ends here */
@@ -227,20 +235,23 @@ color: #4a575b;
 .wrapper-Hubs-listings{
     background-color: #e6ebef; 
     text-align: center;
+    
     padding-top: 25px;
     padding-bottom: 30px;
 }
 
 .wrapper-Hubs-listings h1{
-    border-left: 6px solid #919c9f;
-     margin: 0 auto;
-    width: 18.65%; 
     color: #4a575b;
     font-size: 1.7em;
     font-weight: 700;
-    line-height:  0.8;
-    padding-left: 3px;
+    margin:  0;
     text-transform: uppercase;
+}
+.wrapper-Hubs-listings h1 span{
+background-image: url('../images/grey-strip.png'); 
+background-position: 0 9px;
+    background-repeat: no-repeat;
+    padding-left: 10px;
 }
 .wrapper-Hubs-listings p{
    padding: 15px 0 10px;
@@ -276,15 +287,21 @@ color: #4a575b;
     box-shadow: 0px 2px 4px 1px #c3c7ca;
 }
 .wrapper-section-map-view h1{
-      border-left: 6px solid #919c9f;
-     margin: 0 auto;
-     width: 12%; 
+      
     color: #4a575b;
     font-size: 1.7em;
     font-weight: 700;
-    line-height:  0.8;
-    padding-left: 3px;
+      text-align: center;
+     margin:  0;
+  
     text-transform: uppercase;
+    
+}
+.wrapper-section-map-view h1 span{
+   background-image: url("../images/grey-strip.png");
+    background-position: 0 9px;
+    background-repeat: no-repeat;
+    padding-left: 10px; 
     
 }
 .remove-padding-right{
@@ -332,3 +349,320 @@ color: #4a575b;
     height:330px;
 }
 /* Landing Section Map View ends here */
+
+/* landing section About us */
+
+
+.wrapper-People-talk {
+    background-color: #e6ebef;
+   padding-top: 43px;
+   padding-bottom: 35px;
+}
+.wrapper-People-talk h1 {
+  
+    color: #4a575b;
+    font-size: 1.7em;
+    font-weight: 700;
+      text-align: center;
+     margin:  0;
+   
+    text-transform: uppercase;
+
+}
+.wrapper-People-talk h1 span{
+    background-image: url("../images/grey-strip.png");
+    background-position: 0 9px;
+    background-repeat: no-repeat;
+    padding-left: 10px;
+    
+}
+.wrapper-People-talk .thumbnail {
+    
+    
+    border-color: #d6dadb -moz-use-text-color -moz-use-text-color;
+    border-radius: 0;
+    border-style: solid none none;
+    border-width: 6px medium medium;
+    box-shadow: 0 2px 4px 1px #c3c7ca;
+      margin-top: 40px;
+    padding: 15px 9px 10px;
+}
+.wrapper-People-talk .thumbnail img{
+    margin-top: 7px;
+}
+.wrapper-People-talk .thumbnail .image-bcakground-1{
+   text-align: center;
+   width: 120px;
+   height:120px;
+   background-color: #fde3e6;
+    margin: 0 auto;
+    border-radius: 80px;
+}
+.wrapper-People-talk .thumbnail .image-bcakground-2{
+     text-align: center;
+     width: 120px;
+   height:120px;
+    background-color: #ddecf9; 
+     margin: 0 auto;
+     border-radius: 80px;
+}
+.wrapper-People-talk .thumbnail .image-bcakground-3{
+     text-align: center;
+     width: 120px;
+   height:120px;
+      background-color: #fde3e6; 
+       margin: 0 auto;
+       border-radius: 80px;
+}
+.wrapper-People-talk .thumbnail .caption {
+    text-align: center;
+}
+.wrapper-People-talk .thumbnail h3 {
+    color: #4a575b;
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-top: 7px;
+    text-transform: capitalize;
+}
+.wrapper-People-talk .thumbnail p {
+    color: #919c9f;
+    font-size: 0.9em;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+/* landing section About us ends here */
+/* landing section Try Hubify */
+.wrapper-try-Hubify{
+ background-color: #77c890;
+    color: #fff;
+    font-size: 2.7em;
+    font-weight: 600;
+    padding-bottom: 20px;
+    padding-top: 50px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.wrapper-try-Hubify .try-hubify-signup{
+   background-color: #ea7c10;
+    color: #fff;
+    font-size: 0.45em;
+    font-weight: 700;
+    line-height: 7.5;
+    padding: 17px 65px;
+    text-transform: uppercase;
+    
+}
+
+/* landing section Try Hubify ends here */
+/* landing footer */
+
+.wrapper-landing-footer{
+    
+   background-image: url('../images/footer.jpg');
+    background-repeat: no-repeat;
+   -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        width: 100%;
+    min-height: 400px;
+   padding-top: 45px;
+   color: #fff;
+}
+
+.wrapper-landing-footer .company-heading{
+    margin-top: 25px;
+  line-height: 2.4;
+  padding-left: 65%;
+}
+.wrapper-landing-footer .company-heading a {
+    
+       color: #fff;
+}
+.wrapper-landing-footer .company-heading a:hover {
+     color: #86579c;
+    
+}
+.wrapper-landing-footer .company-heading span{
+    background-color: #86579c;
+   font-size: 1.02em;
+    font-weight: 600;
+    padding: 0 6px;
+    text-transform: uppercase;
+}
+.wrapper-landing-footer .discover-heading{
+    margin-top: 25px;
+    line-height: 2.4;
+     padding-left: 35%;
+}
+.wrapper-landing-footer .discover-heading a{
+       color: #fff;
+    
+}
+.wrapper-landing-footer .discover-heading a:hover{
+      color: #c34c3b;
+}
+.wrapper-landing-footer .discover-heading span{
+        font-size: 1.02em;
+    font-weight: 600;
+    padding: 0 6px;
+    text-transform: uppercase;
+    background-color: #c34c3b;
+}
+.wrapper-landing-footer .make-money-heading{
+     margin-top:25px;
+     line-height: 2.4;
+}
+.wrapper-landing-footer .make-money-heading a{
+    
+       color: #fff;
+}
+.wrapper-landing-footer .make-money-heading a:hover{
+        color: #bc9633;
+}
+.wrapper-landing-footer .make-money-heading span{
+    
+     font-size: 1.02em;
+    font-weight: 600;
+    padding: 0 6px;
+    text-transform: uppercase;
+    background-color: #bc9633;
+}
+
+.wrapper-landing-footer .wrapper-footer-items{
+    padding-right: 5%;
+    
+}
+
+.wrapper-landing-footer .wrapper-footer-items .landing-footer-social-icons{
+     margin-bottom: 30px;
+     margin-top: 28px;
+    text-align: center;
+}
+.wrapper-landing-footer .wrapper-footer-items .landing-footer-social-icons a img{
+    
+   margin-right: 6px;
+}
+.wrapper-landing-footer .wrapper-footer-items .landing-footer-social-icons a{
+    
+ outline: none;
+ text-decoration: none;
+}
+
+/* landing footer end */
+
+
+
+@media (max-width: 480px) {
+
+.wrapper-landing-header {
+    
+    min-height: 300px;
+}
+
+.wrapper-landing-header .banner-heading {
+    font-size: 2em;
+    padding-top: 17px;
+}
+.wrapper-landing-header .free-signup {
+    font-size: 0.4em;
+}
+}
+@media (max-width: 767px) {
+    .remove-padding-right{
+        padding-right: 15px;
+    }
+    .remove-padding-left{
+        padding-left: 15px;
+    }
+    .wrapper-landing-footer .company-heading{
+    
+  padding-left: 0%;
+}
+.wrapper-landing-footer .discover-heading{
+  
+     padding-left: 0%;
+}
+
+  .wrapper-landing-footer .wrapper-footer-items {
+    padding-right: 0;
+}  
+   .navbar-toggle {
+    margin-top: 18px;
+   }
+   
+   .wrapper-landing-header .navbar {
+    
+    text-align: center;
+}
+   .wrapper-landing-header-2 .navbar {
+    
+    text-align: center;
+}
+
+
+#second-menu.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    border-bottom: 5px solid #ffffff;
+}
+}
+
+
+
+ @media (min-width: 768px)and (max-width: 979px) {
+
+   .wrapper-landing-header {
+  
+    min-height: 470px;
+   }
+
+    .wrapper-landing-header .banner-heading {
+    
+    padding-top: 95px;
+    }
+
+ }
+
+ @media (min-width: 481px)and (max-width: 767px) {
+
+     
+
+     .wrapper-landing-header {
+  
+    min-height: 400px;
+     }
+     .wrapper-landing-header .banner-heading {
+    font-size: 3em;
+    padding-top: 51px;
+     }
+
+ }
+
+ 
+
+  @media (min-width: 980px)and (max-width: 991px) {
+
+      
+.wrapper-landing-header {
+    min-height: 553px;
+}
+      
+
+  }
+
+  
+
+   @media (min-width: 1200px) {
+
+       
+
+       
+
+       
+
+   }

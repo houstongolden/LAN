@@ -79,6 +79,30 @@ map.setOptions({styles: styles});
 google.maps.event.addDomListener(window, 'load', initialize);
 
 </script>
+
+
+<script type="text/javascript">
+    
+    
+    $(document).ready(function () {  
+  var top = $('#second-menu').offset().top - parseFloat($('#second-menu').css('marginTop').replace(/auto/, 100));
+  $(window).scroll(function (event) {
+    // what the y position of the scroll is
+    var y = $(this).scrollTop();
+
+    // whether that's below the form
+    if (y >= top) {
+      // if so, ad the fixed class
+      $('#second-menu').addClass('fixed');
+    } else {
+      // otherwise remove it
+      $('#second-menu').removeClass('fixed');
+    }
+  });
+});
+    
+</script>
+
     </head>
     
     
@@ -128,7 +152,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
              
          </section><!--landing header--> 
             
-            <section class="wrapper-landing-header-2"><!--landing 2nd header --> 
+            <section id="second-menu" class="wrapper-landing-header-2"><!--landing 2nd header --> 
              
                    <div class="container">
                        
@@ -180,10 +204,10 @@ google.maps.event.addDomListener(window, 'load', initialize);
                             
                         </div>
                          <div class="row"> 
-                             <div class="col-lg-4 col-xs-4 col-sm-4 col-md-4">
+                             <div class="col-lg-4 col-xs-12 col-sm-4 col-md-4">
                                  
         <div class="thumbnail"><!--Personal Payments-->
-      <img src="images/file.png" alt="file">
+            <a href="#"> <img src="images/file.png" alt="file"></a>
       <div class="caption">
         <h3>Personal Payments</h3>
         <p>Get paid on your own terms. Whether you are trying to sell or rent something you own, offer your services for hire, offer a donation, or post your job offer, Hubify let's you unleash your money-making potential!</p>
@@ -195,11 +219,11 @@ google.maps.event.addDomListener(window, 'load', initialize);
                                  
                                  
                              </div>
-                         <div class="col-lg-4 col-xs-4 col-sm-4 col-md-4">
+                         <div class="col-lg-4 col-xs-12 col-sm-4 col-md-4">
                                  
                                  
                                   <div class="thumbnail"><!--Get Things Done-->
-      <img src="images/hand.png" alt="hand">
+                                      <a href="#"> <img src="images/hand.png" alt="hand"></a>
       <div class="caption">
         <h3>Get Things Done</h3>
         <p>Social commerce just got easier. Selling your handmade creations, renting your bike to a traveler, or offering your professional services, Hubify helps you get things done with awesome social commerce technology.</p>
@@ -210,12 +234,12 @@ google.maps.event.addDomListener(window, 'load', initialize);
                                  
                                  
                              </div>
-                              <div class="col-lg-4 col-xs-4 col-sm-4 col-md-4">
+                              <div class="col-lg-4 col-xs-12 col-sm-4 col-md-4">
                                  
                                  
                                  
             <div class="thumbnail"><!--Trust & Safety-->
-      <img src="images/lock.png" alt="lock">
+                <a href="#">   <img src="images/lock.png" alt="lock"></a>
       <div class="caption">
         <h3>Trust & Safety</h3>
         <p>Your safety is our top priority. Secure transactions, reviews and ratings, and our safety team protect you at every step. We have a commitment to building a safer community commerce platform for the next generation!</p>
@@ -252,7 +276,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
                             
                         </div>
                          <div class="row"> 
-                             <div class="col-lg-3 col-xs-3 col-sm-3 col-md-3">
+                             <div class="col-lg-3 col-xs-6 col-sm-3 col-md-3">
                                  
         <div class="thumbnail"><!--home-->
       <div class="caption">
@@ -262,7 +286,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
       </div>
     </div><!--home-->         
                              </div>
-                               <div class="col-lg-3 col-xs-3 col-sm-3 col-md-3">
+                               <div class="col-lg-3 col-xs-6 col-sm-3 col-md-3">
                                  
         <div class="thumbnail"><!--Hubs & listings-->
       <div class="caption">
@@ -271,7 +295,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
       </div>
     </div><!--Hubs & listings-->         
                              </div>
-                               <div class="col-lg-3 col-xs-3 col-sm-3 col-md-3">
+                               <div class="col-lg-3 col-xs-6 col-sm-3 col-md-3">
                                  
         <div class="thumbnail"><!--Explore-->
       <div class="caption">
@@ -280,7 +304,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
       </div>
     </div><!--Explore-->         
                              </div>
-                               <div class="col-lg-3 col-xs-3 col-sm-3 col-md-3">
+                               <div class="col-lg-3 col-xs-6 col-sm-3 col-md-3">
                                  
         <div class="thumbnail"><!--Cart-->
       <div class="caption">
@@ -317,7 +341,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
                         <div class="row">
                             
                             <div class="col-lg-12 col-xs-12 col-sm-12 col-md-12">
-                                <h1>  Hubs & listings </h1> 
+                                <h1> <span> Hubs & listings </span> </h1> 
                                 <p>  Hubs and listings are social marketplaces for communities, cities, and colleges!<br/>
 They could be private and public. </p>
                                 <img class="img-responsive" src="images/screen-view.png" alt="screen-view" />
@@ -335,14 +359,14 @@ They could be private and public. </p>
                             
                             <div class="col-lg-12 col-xs-12 col-sm-12 col-md-12">
                                 
-                                <h1> Map View </h1>
+                                <h1> <span> Map View </span> </h1>
                             </div>   
                             
                         </div>
                         <section class="inner-section-map">
                         <div class="row">
                             
-                            <div class="col-lg-6 col-xs-6 col-sm-6 col-md-6 remove-padding-right">
+                            <div class="col-lg-6 col-xs-12 col-sm-6 col-md-6 remove-padding-right">
                                 <div class="wraper-show-map">
                                 <h3> Cards are showed on the map </h3>
                                 <p>Do you want to look where there are goods, rentals, services, jobs or something else?
@@ -350,7 +374,7 @@ There is an amazing possibility to find out everything you wand on our beautiful
                                    <a class="show-map-link" href="#"> Show Map</a>
                                 </div>
                             </div>
-                             <div class="col-lg-6 col-xs-6 col-sm-6 col-md-6 remove-padding-left">
+                             <div class="col-lg-6 col-xs-12 col-sm-6 col-md-6 remove-padding-left">
                               <div class="google-maps">
 
                               <div id="googleMap"></div>
@@ -369,27 +393,67 @@ There is an amazing possibility to find out everything you wand on our beautiful
                             
                             <div class="col-lg-12 col-xs-12 col-sm-12 col-md-12">
                                 
-                                <h1> People Talk About Us </h1>
+                                <h1>  <span> People Talk About Us </span> </h1>
                             </div>   
                             
                         </div>
                          <div class="row"> 
-                             <div class="col-lg-4 col-xs-4 col-sm-4 col-md-4">
+                             <div class="col-lg-4 col-xs-12 col-sm-4 col-md-4">
                                  
-        <div class="thumbnail"><!--Personal Payments-->
-      <img alt="file" src="images/file.png">
+        <div class="thumbnail">
+            <div class="image-bcakground-1">
+                 <img alt="Lilly" src="images/Lilly.png">
+                
+            </div>
+            
+     
       <div class="caption">
         <h3>Lilly Garrison</h3>
-        <p>I've been looking for boots that were reasonably priced and that would fit, came upon your site, ordered andreceived them today on Hubify.</p>
+        <p>I've been looking for boots that were reasonably priced and that would fit, came upon your site, ordered andreceived them today on Hubify.<br/>__</p>
      
       </div>
-    </div><!--Personal Payments-->
+    </div>
                                  
                                  
                                  
                                  
                              </div>
-                        
+                         <div class="col-lg-4 col-xs-12 col-sm-4 col-md-4">
+                                 
+        <div class="thumbnail">
+       <div class="image-bcakground-2">
+                 <img alt="John" src="images/John.png">
+                
+            </div>
+      <div class="caption">
+        <h3>John Green</h3>
+        <p>I've been looking for boots that were reasonably priced and that would fit, came upon your site, ordered andreceived them today on Hubify.<br/>__</p>
+     
+      </div>
+    </div>
+                                 
+                                 
+                                 
+                                 
+                             </div>
+                              <div class="col-lg-4 col-xs-12 col-sm-4 col-md-4">
+                                 
+        <div class="thumbnail">
+      <div class="image-bcakground-3">
+                 <img alt="Annete" src="images/Annete.png">
+                
+            </div>
+      <div class="caption">
+        <h3>Annete Cait</h3>
+        <p>I've been looking for boots that were reasonably priced and that would fit, came upon your site, ordered andreceived them today on Hubify.<br/>__</p>
+     
+      </div>
+    </div>
+                                 
+                                 
+                                 
+                                 
+                             </div>
                            
                         
                         
@@ -404,5 +468,99 @@ There is an amazing possibility to find out everything you wand on our beautiful
                 
                 
             </section><!--landing section About us-->
+            
+            
+            
+            
+             <section class="wrapper-try-Hubify"><!--landing section Try Hubify-->
+               
+                    <div class="container">
+                       
+                         <div class="row"> 
+                             <div class="col-lg-12 col-xs-12 col-sm-12 col-md-12">
+     
+                                 
+                                Try Hubify Now </br> <a class="try-hubify-signup" href="#"> sign up  </a> 
+                                 
+                                 
+                             </div>
+                     
+                    </div>
+                    
+                </div>   
+                
+                
+            </section><!--landing section Try Hubify-->
+            
+            
+            <footer class="wrapper-landing-footer">
+                
+                <div class="container">
+                       
+                    <div class="row"> 
+                             <div class="col-lg-12 col-xs-12 col-sm-12 col-md-12">
+                                 <a href="#">  <img src="images/footer-logo.png" alt="footer-logo" class="center-block"/></a>
+                             </div>
+                     
+                        
+                    </div>
+                    
+                    <section class="wrapper-footer-items">
+                    <div class="row"> 
+                        <div class="col-lg-4 col-xs-4 col-sm-4 col-md-4">
+                           
+                            
+                            <div class="company-heading"><span> Company </span><br/>
+                            
+                            <a href="#"> Blog   </a><br/>
+                            <a href="#">  About </a><br/>
+                            <a href="#">  Contact </a><br/>
+                            <a href="#">  Jobs  </a>
+                            
+                            
+                             </div>
+                            
+                            
+                            
+                        </div>    
+                             <div class="col-lg-4 col-xs-4 col-sm-4 col-md-4">
+                                 <div class="discover-heading"><span> Discover </span> <br/>
+                                
+                                 <a href="#"> Listings     </a><br/>
+                            <a href="#"> Hubs  </a><br/>
+                            <a href="#">  How To Buy? </a><br/>
+                            <a href="#">  Buyer Safety </a>
+                                 
+                                 </div>
+                                 
+                        </div> 
+                         <div class="col-lg-4 col-xs-4 col-sm-4 col-md-4">
+                             <div class="make-money-heading"><span> Make Money </span><br/> 
+                             <a href="#">How To List  </a><br/>
+                            <a href="#">  How to Get Paid  </a><br/>
+                            <a href="#"> How To Apply For Jobs </a><br/>
+                            <a href="#"> How To Hire Freelancers </a>
+                              </div>
+                        </div> 
+                        </div>
+                        
+                        
+                        <div class="center-block landing-footer-social-icons">
+                            <a href="#"><img src="images/facebook.png" alt="facebook" /></a> <a href="#"><img src="images/youtube.png" alt="youtube" /></a>
+                                      <a href="#"><img src="images/pinterest.png" alt="pinterest" /></a>
+                                                <a href="#"><img src="images/cam.png" alt="cam" /></a>
+                                                          <a href="#"><img src="images/twitter.png" alt="twitter" /></a>
+                            
+                            
+                            
+                        </div>
+                        
+                        </section>
+                </div>   
+                
+            </footer>       
+            
+            
+            
     </body>
 </html>
