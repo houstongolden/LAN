@@ -48,23 +48,38 @@ body a{
 
 .wrapper-landing-header .navbar ul li a:hover, .wrapper-landing-header .navbar ul li a:active, .wrapper-landing-header .navbar ul li a:focus{
    
-   color: #fff !important;
+   color: #fff;
     
 }
 
 .wrapper-landing-header .navbar ul .sign-up a{
   border: 1px solid #e5e2e0;
-    
-}
-.wrapper-landing-header .navbar ul .sign-up a:hover, .wrapper-landing-header .navbar ul .sign-up a:focus, .wrapper-landing-header .navbar ul .sign-up a:active{
-color: #4a575b !important;
+ 
     
 }
 
-.wrapper-landing-header .navbar ul .sign-up:hover, .wrapper-landing-header .navbar ul .sign-up:focus, .wrapper-landing-header .navbar ul .sign-up:active{
+.wrapper-landing-header .navbar ul .sign-in a{
+  border: 1px solid transparent;
+ 
     
-  background-color: #ffffff !important; 
 }
+.wrapper-landing-header .navbar ul .sign-up a:hover{
+  color: #778387 !important;
+  background-color: #ffffff !important;   
+}
+.wrapper-landing-header .navbar ul .sign-up a:focus, .wrapper-landing-header .navbar ul .sign-up a:active{
+    
+      color: #778387 !important;
+        background-color: #ecf0f2 !important; 
+    
+}
+.wrapper-landing-header .navbar ul .sign-in a:focus, .wrapper-landing-header .navbar ul .sign-in a:active{
+     
+      color: #778387 !important;
+        background-color: #ecf0f2 !important; 
+    
+}
+
 .wrapper-landing-header .banner-heading{
   color: #fff;
     font-size: 3.9em;
@@ -82,16 +97,39 @@ color: #4a575b !important;
     font-weight: 700;
     padding: 13px 35px;
     text-transform: uppercase;
+    text-decoration: none;
 }
+
+.wrapper-landing-header .free-signup:hover{
+    background-color: #0e579a;
+  
+}
+.wrapper-landing-header .free-signup:active, .wrapper-landing-header .free-signup:focus{
+    background-color: #10263d;
+    
+}
+
+
 .wrapper-landing-header .center-block{
   text-align: center;  
     
 }
 .wrapper-landing-header .static-mao{
-  bottom: 15px;
+ background-image: url("../images/mao-static.png");
+    border-radius: 100px;
+    bottom: 20px;
+    height: 42px;
     margin-left: -21px;
     position: absolute;
-}
+    width: 42px;
+ }
+
+.wrapper-landing-header .static-mao:hover{
+ background-image: url("../images/mao-hover.png");
+ }
+.wrapper-landing-header .static-mao:active, .wrapper-landing-header .static-mao:focus {
+ background-image: url("../images/mao-active.png");
+ }
 #second-menu.fixed {
     position: fixed;
     top: 0;
@@ -134,11 +172,18 @@ color: #4a575b !important;
   color: #fff;
     
 }
-.wrapper-landing-header-2 .navbar ul .sign-up a:hover, .wrapper-landing-header-2 .navbar ul .sign-up a:focus, .wrapper-landing-header-2 .navbar ul .sign-up a:active{
-     color: #fff !important;
-      background-color: #9fa8aa !important;  
+.wrapper-landing-header-2 .navbar ul .sign-up a:hover{
+      color: #fff !important;
+      background-color: #72c964 !important;  
 }
-
+.wrapper-landing-header-2 .navbar ul .sign-up a:focus, .wrapper-landing-header-2 .navbar ul .sign-up a:active{
+       color: #fff !important;
+      background-color: #9fa8aa !important; 
+}
+.wrapper-landing-header-2 .navbar ul .sign-in a:focus, .wrapper-landing-header-2 .navbar ul .sign-in a:active{
+       color: #fff !important;
+      background-color: #9fa8aa !important; 
+}
 /* Landing Header ends here */
 
 /* Landing Section Our Missions */
@@ -149,14 +194,18 @@ color: #4a575b !important;
     background-color: #e6ebef;
 }
 .wrapper-our-missions h1{
-   border-left: 6px solid #1d7ad0;
-    color: #4a575b;
-    font-size: 1.7em;
+  color: #4a575b;
+    font-size: 1.61em;
     font-weight: 700;
-    line-height: 0.8;
-    padding-left: 3px;
+    margin: 0;
     text-transform: uppercase;
     
+}
+.wrapper-our-missions h1 span{
+background-image: url('../images/blue-strip.png'); 
+background-position: 0 8px;
+    background-repeat: no-repeat;
+    padding-left: 10px;
 }
 .wrapper-our-missions .thumbnail{
     
@@ -198,13 +247,19 @@ color: #4a575b !important;
 
 
 .wrapper-section-features h1{
-   border-left: 6px solid #ea7c10;
-    color: #4a575b;
-    font-size: 1.7em;
+   color: #4a575b;
+    font-size: 1.61em;
     font-weight: 700;
-    line-height:  0.8;
-    padding-left: 3px;
+    margin: 0;
     text-transform: uppercase;
+    
+}
+
+.wrapper-section-features h1 span{
+background-image: url("../images/orange-strip.png");
+    background-position: 0 8px;
+    background-repeat: no-repeat;
+    padding-left: 10px;
     
 }
 .wrapper-section-features .thumbnail{
@@ -250,14 +305,14 @@ color: #4a575b !important;
 
 .wrapper-Hubs-listings h1{
     color: #4a575b;
-    font-size: 1.7em;
+    font-size: 1.61em;
     font-weight: 700;
     margin:  0;
     text-transform: uppercase;
 }
 .wrapper-Hubs-listings h1 span{
 background-image: url('../images/grey-strip.png'); 
-background-position: 0 9px;
+background-position: 0 8px;
     background-repeat: no-repeat;
     padding-left: 10px;
 }
@@ -279,8 +334,17 @@ background-position: 0 9px;
     font-weight: 700;
     padding: 13px 35px;
     text-transform: uppercase;
+    text-decoration: none;
 }
 
+.wrapper-Hubs-listings .open-listing-link:hover{
+    background-color: #0e579a;
+
+}
+.wrapper-Hubs-listings .open-listing-link:active, .wrapper-Hubs-listings .open-listing-link:focus{
+    background-color: #10263d;
+
+}
 /* Landing Section Hubs & listings ends here */
 
 /* Landing Section Map View */
@@ -297,7 +361,7 @@ background-position: 0 9px;
 .wrapper-section-map-view h1{
       
     color: #4a575b;
-    font-size: 1.7em;
+    font-size: 1.61em;
     font-weight: 700;
       text-align: center;
      margin:  0;
@@ -307,7 +371,7 @@ background-position: 0 9px;
 }
 .wrapper-section-map-view h1 span{
    background-image: url("../images/grey-strip.png");
-    background-position: 0 9px;
+    background-position: 0 8px;
     background-repeat: no-repeat;
     padding-left: 10px; 
     
@@ -349,7 +413,16 @@ background-position: 0 9px;
     font-weight: 700;
     padding: 13px 35px;
     text-transform: uppercase;
-    
+    text-decoration: none;
+}
+
+.wrapper-section-map-view .inner-section-map .wraper-show-map .show-map-link:hover {
+    background-color: #0e579a;
+
+}
+.wrapper-section-map-view .inner-section-map .wraper-show-map .show-map-link:focus, .wrapper-section-map-view .inner-section-map .wraper-show-map .show-map-link:active  {
+    background-color: #10263d;
+
 }
 #googleMap{
     
@@ -369,7 +442,7 @@ background-position: 0 9px;
 .wrapper-People-talk h1 {
   
     color: #4a575b;
-    font-size: 1.7em;
+    font-size: 1.61em;
     font-weight: 700;
       text-align: center;
      margin:  0;
@@ -379,7 +452,7 @@ background-position: 0 9px;
 }
 .wrapper-People-talk h1 span{
     background-image: url("../images/grey-strip.png");
-    background-position: 0 9px;
+    background-position: 0 8px;
     background-repeat: no-repeat;
     padding-left: 10px;
     
@@ -459,9 +532,17 @@ background-position: 0 9px;
     line-height: 7.5;
     padding: 17px 65px;
     text-transform: uppercase;
+    text-decoration: none;
     
 }
-
+.wrapper-try-Hubify .try-hubify-signup:hover{
+    background-color: #eb9847;
+  
+}
+.wrapper-try-Hubify .try-hubify-signup:active, .wrapper-try-Hubify .try-hubify-signup:focus {
+    background-color: #9fa8aa;
+  
+}
 /* landing section Try Hubify ends here */
 /* landing footer */
 
@@ -485,11 +566,18 @@ background-position: 0 9px;
   padding-left: 65%;
 }
 .wrapper-landing-footer .company-heading a {
-    
-       color: #fff;
+     text-decoration: none;
+       color: #c6c7c6;
 }
 .wrapper-landing-footer .company-heading a:hover {
-     color: #86579c;
+     color: #fff;
+    
+}
+.wrapper-landing-footer .company-heading a:active, .wrapper-landing-footer .company-heading a:focus{
+     border-bottom: 1px solid #7f807e;
+    color: #fff;
+  
+     
     
 }
 .wrapper-landing-footer .company-heading span{
@@ -505,11 +593,17 @@ background-position: 0 9px;
      padding-left: 35%;
 }
 .wrapper-landing-footer .discover-heading a{
-       color: #fff;
-    
+       color: #c6c7c6;
+      text-decoration: none;
 }
 .wrapper-landing-footer .discover-heading a:hover{
-      color: #c34c3b;
+       color: #fff;
+}
+
+.wrapper-landing-footer .discover-heading a:active, .wrapper-landing-footer .discover-heading a:focus{
+       border-bottom: 1px solid #7f807e;
+    color: #fff;
+   
 }
 .wrapper-landing-footer .discover-heading span{
         font-size: 1.02em;
@@ -523,11 +617,16 @@ background-position: 0 9px;
      line-height: 2.4;
 }
 .wrapper-landing-footer .make-money-heading a{
-    
-       color: #fff;
+      text-decoration: none;
+       color: #c6c7c6;
 }
 .wrapper-landing-footer .make-money-heading a:hover{
-        color: #bc9633;
+         color: #fff;
+}
+.wrapper-landing-footer .make-money-heading a:active, .wrapper-landing-footer .make-money-heading a:focus{
+         border-bottom: 1px solid #7f807e;
+    color: #fff;
+   
 }
 .wrapper-landing-footer .make-money-heading span{
     
@@ -550,17 +649,52 @@ background-position: 0 9px;
 }
 .wrapper-landing-footer .wrapper-footer-items .landing-footer-social-icons a img{
     
-   margin-right: 6px;
+  width: 2.4%;
+}
+
+.wrapper-landing-footer .wrapper-footer-items .landing-footer-social-icons .landing-facebook{
+    
+   border: 3px solid #3b5998;
+}
+.wrapper-landing-footer .wrapper-footer-items .landing-footer-social-icons .landing-youtube{
+    
+   border: 3px solid #c02b29;
+}
+.wrapper-landing-footer .wrapper-footer-items .landing-footer-social-icons .landing-pinterest{
+    
+   border: 3px solid #cb211d;
+}
+.wrapper-landing-footer .wrapper-footer-items .landing-footer-social-icons .landing-cam{
+    
+ border: 3px solid #cd5959;
+}
+.wrapper-landing-footer .wrapper-footer-items .landing-footer-social-icons .landing-twitter{
+    
+  border: 3px solid #56a3d9;
+}
+.wrapper-landing-footer .wrapper-footer-items .landing-footer-social-icons a:hover{
+    
+  border: 3px solid #716164;
+}
+.wrapper-landing-footer .wrapper-footer-items .landing-footer-social-icons a:active, .wrapper-landing-footer .wrapper-footer-items .landing-footer-social-icons a:focus {
+    
+  border: 3px solid #d0ced2;
 }
 .wrapper-landing-footer .wrapper-footer-items .landing-footer-social-icons a{
-    
+   padding: 2px 0 4px;
  outline: none;
  text-decoration: none;
+ margin-right: 3px;
+  
 }
+
+
 
 /* landing footer end */
 
+/* Messages Side Bar */
 
+/* Messages Side Bar ends here  */
 
 @media (max-width: 480px) {
 
@@ -597,10 +731,23 @@ background-position: 0 9px;
   .wrapper-landing-footer .wrapper-footer-items {
     padding-right: 0;
 }  
-   .navbar-toggle {
+   .wrapper-landing-header .navbar-toggle {
     margin-top: 18px;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0 !important;
+    border: medium none;
    }
-   
+     .wrapper-landing-header .navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+   .wrapper-landing-header-2 .navbar-toggle {
+    margin-top: 18px;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0 !important;
+   border: medium none;
+   }
+    .wrapper-landing-header-2 .navbar-default .navbar-toggle .icon-bar {
+    background-color: #4a575b;
+}
    .wrapper-landing-header .navbar {
     
     text-align: center;
@@ -610,7 +757,10 @@ background-position: 0 9px;
     text-align: center;
 }
 
-
+ .wrapper-landing-header .navbar-collapse,  .wrapper-landing-header-2 .navbar-collapse{
+    box-shadow: none;
+    border: none;
+}
 
 }
 
