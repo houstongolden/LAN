@@ -85,9 +85,21 @@ google.maps.event.addDomListener(window, 'load', initialize);
     
 
 
+    $(document).ready(function(){
+        var top = $('#second-menu').offset().top - parseFloat($('#second-menu').css('marginTop').replace(/auto/, 100));
+	   $(window).bind('scroll', function() {
+               var y = $(this).scrollTop();
+	
+			 if (y >= top) {
+				 $('#second-menu').addClass('fixed');
+			 }
+			 else {
+				 $('#second-menu').removeClass('fixed');
+			 }
+		});
+	});
     
-    
-    $(document).ready(function () {  
+  /*  $(document).ready(function () {  
   var top = $('#second-menu').offset().top - parseFloat($('#second-menu').css('marginTop').replace(/auto/, 100));
   $(window).scroll(function (event) {
     // what the y position of the scroll is
@@ -96,20 +108,18 @@ google.maps.event.addDomListener(window, 'load', initialize);
     // whether that's below the form
     if (y >= top) {
       // if so, ad the fixed class
-       
-     
       $('#second-menu').addClass('fixed');
       
-
+       
+     
+     
     } else {
       // otherwise remove it
-  
       $('#second-menu').removeClass('fixed');
     
-
-    }
+      }
   });
-});
+}); */
     
 </script>
 

@@ -131,11 +131,13 @@ body a{
  background-image: url("../images/mao-active.png");
  }
 
+ 
+
 #second-menu.fixed {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 1 !important;
     width: 100%;
   
 }
