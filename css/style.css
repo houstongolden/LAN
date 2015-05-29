@@ -1,0 +1,894 @@
+/* CSS Document Landing Page */
+body {
+    font-family:'Open Sans',sans-serif
+}
+
+body a {
+    outline:none!important
+}
+
+/* Landing Header */
+.wrapper-landing-header {
+    background-image:url(../images/banner.jpg);
+    background-repeat:no-repeat;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    width:100%;
+    min-height:658px;
+    position:relative
+}
+
+.wrapper-landing-header .navbar {
+    margin-top:15px;
+    background:none;
+    border:none
+}
+
+.wrapper-landing-header .navbar ul {
+    margin-top:14px
+}
+
+.wrapper-landing-header .navbar ul li a {
+    text-transform:uppercase;
+    color:#e5e2e0;
+    font-weight:700;
+    padding:10px 20px;
+    font-size:.9em;
+    margin-right:5px
+}
+
+.wrapper-landing-header .navbar ul li a:hover,.wrapper-landing-header .navbar ul li a:active,.wrapper-landing-header .navbar ul li a:focus {
+    color:#fff
+}
+
+.wrapper-landing-header .navbar ul .sign-up a {
+    border:1px solid #e5e2e0
+}
+
+.wrapper-landing-header .navbar ul .sign-in a {
+    border:1px solid transparent
+}
+
+.wrapper-landing-header .navbar ul .sign-up a:hover {
+    color:#778387!important;
+    background-color:#fff!important
+}
+
+.wrapper-landing-header .navbar ul .sign-up a:focus,.wrapper-landing-header .navbar ul .sign-up a:active {
+    color:#778387!important;
+    background-color:#ecf0f2!important
+}
+
+.wrapper-landing-header .navbar ul .sign-in a:focus,.wrapper-landing-header .navbar ul .sign-in a:active {
+    color:#778387!important;
+    background-color:#ecf0f2!important
+}
+
+.wrapper-landing-header .banner-heading {
+    color:#fff;
+    font-size:3.9em;
+    font-weight:600;
+    line-height:1.25;
+    padding-top:160px;
+    text-align:center;
+    padding-bottom:60px
+}
+
+.wrapper-landing-header .banner-heading h1 {
+    font-size:inherit;
+    font-weight:inherit;
+    line-height:inherit
+}
+
+.wrapper-landing-header .free-signup {
+    background-color:#1d7ad0;
+    color:#fff;
+    font-size:.26em;
+    font-weight:700;
+    padding:13px 35px;
+    text-transform:uppercase;
+    text-decoration:none
+}
+
+.wrapper-landing-header .free-signup:hover {
+    background-color:#0e579a
+}
+
+.wrapper-landing-header .free-signup:active,.wrapper-landing-header .free-signup:focus {
+    background-color:#10263d
+}
+
+.wrapper-landing-header .center-block {
+    text-align:center
+}
+
+.wrapper-landing-header .static-mao {
+    background-image:url(../images/mao-static.png);
+    border-radius:100px;
+    bottom:20px;
+    height:42px;
+    margin-left:-21px;
+    position:absolute;
+    width:42px;
+    transition: all .3s ease-in;
+}
+
+.wrapper-landing-header .static-mao:hover {
+    background-image:url(../images/mao-hover.png)
+}
+
+.wrapper-landing-header .static-mao:active,.wrapper-landing-header .static-mao:focus {
+    background-image:url(../images/mao-active.png)
+}
+
+.wrapper-landing-header .material-icons {
+    font-size:2.4em;
+    color:#fff
+}
+
+.wrapper-landing-header .navbar {
+    margin-bottom:0
+}
+
+#second-menu.fixed {
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:1!important;
+    width:100%
+}
+
+.wrapper-landing-header-2 {
+    border-bottom:1px solid #c6ccd1;
+    min-height:88px;
+    background-color:#fff
+}
+
+.wrapper-landing-header-2 .navbar {
+    margin-top:8px;
+    background:none;
+    border:none;
+    margin-bottom:17px
+}
+
+.wrapper-landing-header-2 .navbar ul {
+    margin-top:16px
+}
+
+.wrapper-landing-header-2 .navbar ul li a {
+    text-transform:uppercase;
+    color:#6e797c;
+    font-weight:700;
+    padding:10px 23px;
+    font-size:.9em
+}
+
+.wrapper-landing-header-2 .navbar ul li a:hover,.wrapper-landing-header-2 .navbar ul li a:focus,.wrapper-landing-header-2 .navbar ul li a:active {
+    color:#1d7ad0!important
+}
+
+.wrapper-landing-header-2 .navbar ul .sign-up a {
+    background-color:#43bb30;
+    color:#fff
+}
+
+.wrapper-landing-header-2 .navbar ul .sign-up a:hover {
+    color:#fff!important;
+    background-color:#72c964!important
+}
+
+.wrapper-landing-header-2 .navbar ul .sign-up a:focus,.wrapper-landing-header-2 .navbar ul .sign-up a:active {
+    color:#fff!important;
+    background-color:#9fa8aa!important
+}
+
+.wrapper-landing-header-2 .navbar ul .sign-in a:focus,.wrapper-landing-header-2 .navbar ul .sign-in a:active {
+    color:#fff!important;
+    background-color:#9fa8aa!important
+}
+
+.wrapper-landing-header-2 .material-icons {
+    font-size:2.4em;
+    color:#4a575b
+}
+
+.wrapper-landing-header-2 .material-icons:hover,.wrapper-landing-header-2 .material-icons:focus,.wrapper-landing-header-2 .material-icons:active {
+    color:#1d7ad0
+}
+
+.wrapper-landing-header-2 .navbar-toggle {
+    margin-bottom:0
+}
+
+.wrapper-height {
+    height:88px;
+    padding-bottom:40px;
+    background-color:#E6EBEF;
+    display:none
+}
+
+.wrapper-height.visible {
+    display:block
+}
+
+/* Landing Header ends here */
+/* Landing Section Our Missions */
+.wrapper-our-missions {
+    background-color:#e6ebef;
+    min-height:350px;
+    padding-top:0
+}
+
+.wrapper-our-missions h1 {
+    color:#4a575b;
+    font-size:23px;
+    font-weight:700;
+    margin:0;
+    text-transform:uppercase
+}
+
+.wrapper-our-missions h1 span {
+    background-image:url(../images/blue-strip.png);
+    background-position:0 8px;
+    background-repeat:no-repeat;
+    padding-left:10px
+}
+
+.wrapper-our-missions .thumbnail {
+    border-radius:0;
+    border-left:none;
+    border-right:none;
+    border-bottom:none;
+    border-top:6px solid #abcff0;
+    padding:15px 9px 10px;
+    margin-top:30px;
+    box-shadow:0 2px 4px 1px #c3c7ca
+}
+
+.wrapper-our-missions .thumbnail .caption {
+    text-align:center
+}
+
+.wrapper-our-missions .thumbnail h3 {
+    color:#4a575b;
+    font-size:1.2em;
+    font-weight:600;
+    margin-top:7px;
+    text-transform:capitalize
+}
+
+.wrapper-our-missions .thumbnail p {
+    color:#919c9f;
+    font-size:.9em;
+    font-weight:600;
+    line-height:1.2
+}
+
+/* Landing Section Our Missions ends here */
+/* Landing Section Features */
+.wrapper-section-features {
+    min-height:200px;
+    background-color:#e6ebef
+}
+
+.wrapper-section-features h1 {
+    color:#4a575b;
+    font-size:23px;
+    font-weight:700;
+    margin:0;
+    text-transform:uppercase
+}
+
+.wrapper-section-features h1 span {
+    background-image:url(../images/orange-strip.png);
+    background-position:0 8px;
+    background-repeat:no-repeat;
+    padding-left:10px
+}
+
+.wrapper-section-features .thumbnail {
+    border-radius:0;
+    border-left:none;
+    border-right:none;
+    border-bottom:none;
+    border-top:6px solid #f1be8d;
+    padding:4px 9px 5px;
+    margin-top:30px;
+    box-shadow:0 2px 4px 1px #c3c7ca
+}
+
+.wrapper-section-features .thumbnail h3 {
+    color:#4a575b;
+    font-size:1.2em;
+    font-weight:600;
+    margin-top:7px;
+    text-transform:capitalize
+}
+
+.wrapper-section-features .thumbnail h3 i {
+    color:#ea7c10
+}
+
+.wrapper-section-features .thumbnail p {
+    color:#919c9f;
+    font-size:.9em;
+    font-weight:600;
+    line-height:1.2
+}
+
+/* Landing Section Features ends here */
+/* Landing Section Hubs & listings */
+.wrapper-Hubs-listings {
+    background-color:#e6ebef;
+    text-align:center;
+    padding-top:40px;
+    padding-bottom:30px
+}
+
+.wrapper-Hubs-listings h1 {
+    color:#4a575b;
+    font-size:23px;
+    font-weight:700;
+    margin:0;
+    text-transform:uppercase
+}
+
+.wrapper-Hubs-listings h1 span {
+    background-image:url(../images/grey-strip.png);
+    background-position:0 8px;
+    background-repeat:no-repeat;
+    padding-left:10px
+}
+
+.wrapper-Hubs-listings p {
+    padding:15px 0 10px;
+    color:#919c9f;
+    font-size:.9em;
+    font-weight:600;
+    line-height:1.2
+}
+
+.wrapper-Hubs-listings img {
+    margin:0 auto 32px
+}
+
+.wrapper-Hubs-listings .open-listing-link {
+    background-color:#1d7ad0;
+    color:#fff;
+    font-size:1em;
+    font-weight:700;
+    padding:13px 35px;
+    text-transform:uppercase;
+    text-decoration:none
+}
+
+.wrapper-Hubs-listings .open-listing-link:hover {
+    background-color:#0e579a
+}
+
+.wrapper-Hubs-listings .open-listing-link:active,.wrapper-Hubs-listings .open-listing-link:focus {
+    background-color:#10263d
+}
+
+/* Landing Section Hubs & listings ends here */
+/* Landing Section Map View */
+.wrapper-section-map-view {
+    padding-top:20px;
+    background-color:#e6ebef
+}
+
+.wrapper-section-map-view .inner-section-map {
+    margin-top:40px;
+    background-color:#fff;
+    box-shadow:0 2px 4px 1px #c3c7ca
+}
+
+.wrapper-section-map-view h1 {
+    color:#4a575b;
+    font-size:23px;
+    font-weight:700;
+    text-align:center;
+    margin:0;
+    text-transform:uppercase
+}
+
+.wrapper-section-map-view h1 span {
+    background-image:url(../images/grey-strip.png);
+    background-position:0 8px;
+    background-repeat:no-repeat;
+    padding-left:10px
+}
+
+.remove-padding-right {
+    padding-right:0
+}
+
+.remove-padding-left {
+    padding-left:0
+}
+
+.wrapper-section-map-view .inner-section-map .wraper-show-map {
+    text-align:center;
+    border-left:8px solid #d6dadb;
+    min-height:330px;
+    padding:77px 9px 30px
+}
+
+.wrapper-section-map-view .inner-section-map .wraper-show-map h3 {
+    color:#4a575b;
+    font-size:1.2em;
+    font-weight:600;
+    margin-top:7px;
+    text-transform:capitalize
+}
+
+.wrapper-section-map-view .inner-section-map .wraper-show-map p {
+    padding:13px 8% 33px;
+    color:#919c9f;
+    font-size:1em;
+    font-weight:400;
+    line-height:1.2;
+    padding:13px 8% 33px
+}
+
+.wrapper-section-map-view .inner-section-map .wraper-show-map .show-map-link {
+    background-color:#1d7ad0;
+    color:#fff;
+    font-size:1em;
+    font-weight:700;
+    padding:13px 35px;
+    text-transform:uppercase;
+    text-decoration:none
+}
+
+.wrapper-section-map-view .inner-section-map .wraper-show-map .show-map-link:hover {
+    background-color:#0e579a
+}
+
+.wrapper-section-map-view .inner-section-map .wraper-show-map .show-map-link:focus,.wrapper-section-map-view .inner-section-map .wraper-show-map .show-map-link:active {
+    background-color:#10263d
+}
+
+#googleMap {
+    width:100%;
+    height:330px
+}
+
+/* Landing Section Map View ends here */
+/* landing section About us */
+.wrapper-People-talk {
+    background-color:#e6ebef;
+    padding-top:43px;
+    padding-bottom:35px
+}
+
+.wrapper-People-talk h1 {
+    color:#4a575b;
+    font-size:23px;
+    font-weight:700;
+    text-align:center;
+    margin:0;
+    text-transform:uppercase
+}
+
+.wrapper-People-talk h1 span {
+    background-image:url(../images/grey-strip.png);
+    background-position:0 8px;
+    background-repeat:no-repeat;
+    padding-left:10px
+}
+
+.wrapper-People-talk .thumbnail {
+    border-color:#d6dadb -moz-use-text-color -moz-use-text-color;
+    border-radius:0;
+    border-style:solid none none;
+    border-width:6px medium medium;
+    box-shadow:0 2px 4px 1px #c3c7ca;
+    margin-top:40px;
+    padding:15px 9px 10px
+}
+
+.wrapper-People-talk .thumbnail img {
+    margin-top:7px
+}
+
+.wrapper-People-talk .thumbnail .image-bcakground-1 {
+    text-align:center;
+    width:120px;
+    height:120px;
+    background-color:#fde3e6;
+    margin:0 auto;
+    border-radius:80px
+}
+
+.wrapper-People-talk .thumbnail .image-bcakground-2 {
+    text-align:center;
+    width:120px;
+    height:120px;
+    background-color:#ddecf9;
+    margin:0 auto;
+    border-radius:80px
+}
+
+.wrapper-People-talk .thumbnail .image-bcakground-3 {
+    text-align:center;
+    width:120px;
+    height:120px;
+    background-color:#fde3e6;
+    margin:0 auto;
+    border-radius:80px
+}
+
+.wrapper-People-talk .thumbnail .caption {
+    text-align:center
+}
+
+.wrapper-People-talk .thumbnail h3 {
+    color:#4a575b;
+    font-size:1.2em;
+    font-weight:600;
+    margin-top:7px;
+    text-transform:capitalize
+}
+
+.wrapper-People-talk .thumbnail p {
+    color:#919c9f;
+    font-size:.9em;
+    font-weight:600;
+    line-height:1.2
+}
+
+/* landing section About us ends here */
+/* landing section Try Hubify */
+.wrapper-try-Hubify {
+    background-color:#77c890;
+    color:#fff;
+    font-size:2.7em;
+    font-weight:600;
+    padding-bottom:20px;
+    padding-top:50px;
+    text-align:center;
+    text-transform:uppercase
+}
+
+.wrapper-try-Hubify .try-hubify-signup {
+    background-color:#ea7c10;
+    color:#fff;
+    font-size:.45em;
+    font-weight:700;
+    line-height:7.5;
+    padding:17px 65px;
+    text-transform:uppercase;
+    text-decoration:none
+}
+
+.wrapper-try-Hubify .try-hubify-signup:hover {
+    background-color:#eb9847
+}
+
+.wrapper-try-Hubify .try-hubify-signup:active,.wrapper-try-Hubify .try-hubify-signup:focus {
+    background-color:#9fa8aa
+}
+
+/* landing section Try Hubify ends here */
+/* landing footer */
+.wrapper-landing-footer {
+    background-image:url(../images/footer.jpg);
+    background-repeat:no-repeat;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    width:100%;
+    min-height:400px;
+    padding-top:45px;
+    color:#fff
+}
+
+.wrapper-landing-footer .company-heading {
+    margin-top:25px;
+    line-height:2.4;
+    padding-left:65%
+}
+
+.wrapper-landing-footer .company-heading a {
+    text-decoration:none;
+    color:#c6c7c6
+}
+
+.wrapper-landing-footer .company-heading a:hover {
+    color:#fff
+}
+
+.wrapper-landing-footer .company-heading a:active,.wrapper-landing-footer .company-heading a:focus {
+    border-bottom:1px solid #7f807e;
+    color:#fff
+}
+
+.wrapper-landing-footer .company-heading span {
+    background-color:#86579c;
+    font-size:1.02em;
+    font-weight:600;
+    padding:0 6px;
+    text-transform:uppercase
+}
+
+.wrapper-landing-footer .discover-heading {
+    margin-top:25px;
+    line-height:2.4;
+    padding-left:35%
+}
+
+.wrapper-landing-footer .discover-heading a {
+    color:#c6c7c6;
+    text-decoration:none
+}
+
+.wrapper-landing-footer .discover-heading a:hover {
+    color:#fff
+}
+
+.wrapper-landing-footer .discover-heading a:active,.wrapper-landing-footer .discover-heading a:focus {
+    border-bottom:1px solid #7f807e;
+    color:#fff
+}
+
+.wrapper-landing-footer .discover-heading span {
+    font-size:1.02em;
+    font-weight:600;
+    padding:0 6px;
+    text-transform:uppercase;
+    background-color:#c34c3b
+}
+
+.wrapper-landing-footer .make-money-heading {
+    margin-top:25px;
+    line-height:2.4
+}
+
+.wrapper-landing-footer .make-money-heading a {
+    text-decoration:none;
+    color:#c6c7c6
+}
+
+.wrapper-landing-footer .make-money-heading a:hover {
+    color:#fff
+}
+
+.wrapper-landing-footer .make-money-heading a:active,.wrapper-landing-footer .make-money-heading a:focus {
+    border-bottom:1px solid #7f807e;
+    color:#fff
+}
+
+.wrapper-landing-footer .make-money-heading span {
+    font-size:1.02em;
+    font-weight:600;
+    padding:0 6px;
+    text-transform:uppercase;
+    background-color:#bc9633
+}
+
+.wrapper-landing-footer .wrapper-footer-items {
+    padding-right:5%
+}
+
+.wrapper-landing-footer .wrapper-footer-items .landing-footer-social-icons {
+    height:27px;
+    margin:30px auto;
+    text-align:center;
+    width:216px
+}
+
+.wrapper-landing-footer .wrapper-footer-items .landing-footer-social-icons a img {
+    margin-top:-6.7%;
+    width:62%
+}
+
+.wrapper-landing-footer .wrapper-footer-items .landing-footer-social-icons .landing-facebook {
+    border:3px solid #3b5998
+}
+
+.wrapper-landing-footer .wrapper-footer-items .landing-footer-social-icons .landing-youtube {
+    border:3px solid #c02b29
+}
+
+.wrapper-landing-footer .wrapper-footer-items .landing-footer-social-icons .landing-pinterest {
+    border:3px solid #cb211d
+}
+
+.wrapper-landing-footer .wrapper-footer-items .landing-footer-social-icons .landing-cam {
+    border:3px solid #cd5959
+}
+
+.wrapper-landing-footer .wrapper-footer-items .landing-footer-social-icons .landing-twitter {
+    border:3px solid #56a3d9
+}
+
+.wrapper-landing-footer .wrapper-footer-items .landing-footer-social-icons a:hover {
+    border:3px solid #716164
+}
+
+.wrapper-landing-footer .wrapper-footer-items .landing-footer-social-icons a:active,.wrapper-landing-footer .wrapper-footer-items .landing-footer-social-icons a:focus {
+    border:3px solid #d0ced2
+}
+
+.wrapper-landing-footer .wrapper-footer-items .landing-footer-social-icons a {
+    padding:3px 0;
+    outline:none;
+    text-decoration:none;
+    margin-right:3px
+}
+
+/*TODO - delete this class then put real map*/
+.google-maps {
+    background-image:url(../images/location-map.jpg);
+    height:330px;
+    background-size:cover
+}
+
+.google-maps img {
+    height:330px;
+    width:100%
+}
+
+/* landing footer end */
+/* Messages content */
+/* Messages content ends here  */
+@media (max-width: 480px) {
+    .wrapper-landing-header {
+        min-height:300px
+    }
+
+    .wrapper-landing-header .banner-heading {
+        font-size:2em;
+        padding-top:17px;
+        line-height:1.7
+    }
+
+    .wrapper-landing-header .free-signup {
+        font-size:.4em
+    }
+
+    .wrapper-landing-header .static-mao {
+        bottom:3px
+    }
+}
+
+@media (max-width: 767px) {
+    .remove-padding-right {
+        padding-right:15px
+    }
+
+    .remove-padding-left {
+        padding-left:15px
+    }
+
+    .wrapper-landing-footer .company-heading {
+        padding-left:0
+    }
+
+    .wrapper-landing-footer .discover-heading {
+        padding-left:0
+    }
+
+    .wrapper-landing-footer .wrapper-footer-items {
+        padding-right:0
+    }
+
+    .wrapper-landing-header .navbar-toggle {
+        margin-top:12px;
+        background:rgba(0,0,0,0) none repeat scroll 0 0!important;
+        border:medium none
+    }
+
+    .wrapper-landing-header .navbar-default .navbar-toggle .icon-bar {
+        background-color:#fff
+    }
+
+    .wrapper-landing-header-2 .navbar-toggle {
+        margin-top:12px;
+        background:rgba(0,0,0,0) none repeat scroll 0 0!important;
+        border:medium none
+    }
+
+    .wrapper-landing-header-2 .navbar-default .navbar-toggle .icon-bar {
+        background-color:#4a575b
+    }
+
+    .wrapper-landing-header .navbar {
+        text-align:center
+    }
+
+    .wrapper-landing-header-2 .navbar {
+        text-align:center
+    }
+
+    .wrapper-landing-header .navbar-collapse,.wrapper-landing-header-2 .navbar-collapse {
+        box-shadow:none;
+        border:none
+    }
+
+    .wrapper-landing-header .banner-heading {
+        padding-bottom:80px
+    }
+    .wrapper-landing-header .navbar-collapse {
+        background-color: #fff;
+    }
+
+    .wrapper-landing-header .navbar ul {
+        margin-top:14px
+    }
+
+    .wrapper-landing-header .navbar ul li a {
+        text-transform:uppercase;
+        color:#6e797c;
+        font-weight:700;
+        padding:10px 23px;
+        font-size:.9em
+    }
+
+    .wrapper-landing-header .navbar ul li a:hover,.wrapper-landing-header .navbar ul li a:focus,.wrapper-landing-header .navbar ul li a:active {
+        color:#1d7ad0!important
+    }
+
+    .wrapper-landing-header .navbar ul .sign-up a {
+        background-color:#43bb30;
+        color:#fff;
+        margin-left:15px;
+        margin-right:15px;
+    }
+
+    .wrapper-landing-header .navbar ul .sign-up a:hover {
+        color:#fff!important;
+        background-color:#72c964!important
+    }
+
+    .wrapper-landing-header .navbar ul .sign-up a:focus,.wrapper-landing-header .navbar ul .sign-up a:active {
+        color:#fff!important;
+        background-color:#9fa8aa!important
+    }
+
+    .wrapper-landing-header .navbar ul .sign-in a:focus,.wrapper-landing-header .navbar ul .sign-in a:active {
+        color:#fff!important;
+        background-color:#9fa8aa!important
+    }
+}
+
+@media (min-width: 768px)and (max-width: 979px) {
+    .wrapper-landing-header {
+        min-height:470px
+    }
+
+    .wrapper-landing-header .banner-heading {
+        padding-top:95px
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .wrapper-landing-header .banner-heading {
+        padding-bottom:70px
+    }
+}
+
+@media (min-width: 481px)and (max-width: 767px) {
+    .wrapper-landing-header {
+        min-height:400px
+    }
+
+    .wrapper-landing-header .banner-heading {
+        font-size:3em;
+        padding-top:51px
+    }
+}
+
+@media (min-width: 980px)and (max-width: 991px) {
+    .wrapper-landing-header {
+        min-height:553px
+    }
+}
+
+@media (min-width: 1200px) {
+
+}
