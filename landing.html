@@ -580,20 +580,7 @@ There is an amazing possibility to find out everything you wand on our beautiful
   });
 });
 
-$(function(){
-    // Check the initial Poistion of  Sticky Header
-    var stickyHeaderTop = $('#second-menu').offset().top;
 
-    $(window).scroll(function(){
-            if( $(window).scrollTop() > stickyHeaderTop ) {
-                    $('#second-menu').css({position: 'fixed', top: '0px'});
-                    $('.hide-on-fixed').css('display', 'none');
-            } else {
-                    $('#second-menu').css({position: 'static', top: '600px'});
-                    $('.hide-on-fixed').css('display', 'block');
-            }
-    }); 
- });
 
                     </script>
                 
