@@ -83,6 +83,9 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 <script type="text/javascript">
     
+
+
+    
     
     $(document).ready(function () {  
   var top = $('#second-menu').offset().top - parseFloat($('#second-menu').css('marginTop').replace(/auto/, 100));
@@ -93,10 +96,16 @@ google.maps.event.addDomListener(window, 'load', initialize);
     // whether that's below the form
     if (y >= top) {
       // if so, ad the fixed class
+       $('#second-menu').fadeIn();
       $('#second-menu').addClass('fixed');
+   
+
     } else {
       // otherwise remove it
+           $('#second-menu').fadeOut();
       $('#second-menu').removeClass('fixed');
+   $('#second-menu').removeClass('fixed');
+
     }
   });
 });
@@ -154,6 +163,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
              
          </section><!--landing header--> 
          <span id="hubsandlistings"></span>
+        
             <section id="second-menu" class="wrapper-landing-header-2"><!--landing 2nd header --> 
              
                    <div class="container">
@@ -217,80 +227,7 @@ They could be private and public. </p>
                         </div>
                     </div>
             </section><!--landing section Hubs & listings -->
-            
-                <section class="wrapper-our-missions"><!--landing section our missions-->
-               
-                    <div class="container">
-                        <div class="row">
-                            
-                            <div class="col-lg-12 col-xs-12 col-sm-12 col-md-12">
-                                
-                                <h1> <span> Our missions </span> </h1>
-                            </div>   
-                            
-                        </div>
-                         <div class="row"> 
-                             <div class="col-lg-4 col-xs-12 col-sm-4 col-md-4">
-                                 
-        <div class="thumbnail"><!--Personal Payments-->
-            <a href="#"> <img src="images/file.png" alt="file"></a>
-      <div class="caption">
-        <h3>Personal Payments</h3>
-        <p>Get paid on your own terms. Whether you are trying to sell or rent something you own, offer your services for hire, offer a donation, or post your job offer, Hubify let's you unleash your money-making potential!</p>
-     
-      </div>
-    </div><!--Personal Payments-->
-                                 
-                                 
-                                 
-                                 
-                             </div>
-                         <div class="col-lg-4 col-xs-12 col-sm-4 col-md-4">
-                                 
-                                 
-                                  <div class="thumbnail"><!--Get Things Done-->
-                                      <a href="#"> <img src="images/hand.png" alt="hand"></a>
-      <div class="caption">
-        <h3>Get Things Done</h3>
-        <p>Social commerce just got easier. Selling your handmade creations, renting your bike to a traveler, or offering your professional services, Hubify helps you get things done with awesome social commerce technology.</p>
-       
-      </div>
-    </div><!--Get Things Done-->  
-                                 
-                                 
-                                 
-                             </div>
-                              <div class="col-lg-4 col-xs-12 col-sm-4 col-md-4">
-                                 
-                                 
-                                 
-            <div class="thumbnail"><!--Trust & Safety-->
-                <a href="#">   <img src="images/lock.png" alt="lock"></a>
-      <div class="caption">
-        <h3>Trust & Safety</h3>
-        <p>Your safety is our top priority. Secure transactions, reviews and ratings, and our safety team protect you at every step. We have a commitment to building a safer community commerce platform for the next generation!</p>
-       
-      </div>
-    </div><!--Trust & Safety-->
-                                 
-                                 
-                             </div>
-                        
-                        
-                        
-                    </div>
-                    
-                    
-                    
-                </div>   
-                
-                
-                
-                
-            </section><!--landing section our missions-->
-            <span  id="explore-map"></span>
-            
-             <section class="wrapper-section-features"><!--landing section our features-->
+            <section class="wrapper-section-features"><!--landing section our features-->
                
                     <div class="container">
                         <div class="row">
@@ -301,6 +238,7 @@ They could be private and public. </p>
                             </div>   
                             
                         </div>
+                       
                          <div class="row"> 
                              <div class="col-lg-3 col-xs-6 col-sm-3 col-md-3">
                                  
@@ -356,6 +294,82 @@ They could be private and public. </p>
                 
             </section><!--landing section our features-->
             
+             
+                <section class="wrapper-our-missions"><!--landing section our missions-->
+               
+                    <div class="container">
+                        <div class="row">
+                            
+                            <div class="col-lg-12 col-xs-12 col-sm-12 col-md-12">
+                                
+                                <h1> <span> Our missions </span> </h1>
+                            </div>   
+                            
+                        </div>
+                        
+                         <div class="row"> 
+                             <div class="col-lg-4 col-xs-12 col-sm-4 col-md-4">
+                                 
+        <div class="thumbnail"><!--Personal Payments-->
+            <a href="#"> <img src="images/file.png" alt="file"></a>
+      <div class="caption">
+        <h3>Personal Payments</h3>
+        <p>Get paid on your own terms. Whether you are trying to sell or rent something you own, offer your services for hire, offer a donation, or post your job offer, Hubify let's you unleash your money-making potential!</p>
+     
+      </div>
+    </div><!--Personal Payments-->
+                                 
+                                 
+                                 
+                                 
+                             </div>
+                         <div class="col-lg-4 col-xs-12 col-sm-4 col-md-4">
+                                 
+                                 
+                                  <div class="thumbnail"><!--Get Things Done-->
+                                      <a href="#"> <img src="images/hand.png" alt="hand"></a>
+      <div class="caption">
+        <h3>Get Things Done</h3>
+        <p>Social commerce just got easier. Selling your handmade creations, renting your bike to a traveler, or offering your professional services, Hubify helps you get things done with awesome social commerce technology.</p>
+       
+      </div>
+    </div><!--Get Things Done-->  
+                                 
+                                 
+                                 
+                             </div>
+                              <div class="col-lg-4 col-xs-12 col-sm-4 col-md-4">
+                                 
+                                 
+                                 
+            <div class="thumbnail"><!--Trust & Safety-->
+                <a href="#">   <img src="images/lock.png" alt="lock"></a> <span  id="explore-map"></span>
+      <div class="caption">
+        <h3>Trust & Safety</h3>
+        <p>Your safety is our top priority. Secure transactions, reviews and ratings, and our safety team protect you at every step. We have a commitment to building a safer community commerce platform for the next generation!</p>
+       
+      </div>
+    </div><!--Trust & Safety-->
+                                 
+                                 
+                             </div>
+                       
+                       
+                        
+                    </div>
+                    
+                     
+                    
+                </div>   
+                
+                
+                
+                
+            </section><!--landing section our missions-->
+            
+            
+             
+            
             <section class="wrapper-section-map-view"><!--Landing Section Map View -->
                
                     <div class="container">
@@ -381,7 +395,10 @@ There is an amazing possibility to find out everything you wand on our beautiful
                              <div class="col-lg-6 col-xs-12 col-sm-6 col-md-6 remove-padding-left">
                               <div class="google-maps">
 
-                              <div id="googleMap"></div>
+                            <!--  <div id="googleMap"></div> -->
+                            
+                            <img class="" src="images/location-map.jpg" /> 
+                            
 </div>
                             </div>
                         </div>

@@ -130,14 +130,16 @@ body a{
 .wrapper-landing-header .static-mao:active, .wrapper-landing-header .static-mao:focus {
  background-image: url("../images/mao-active.png");
  }
+
 #second-menu.fixed {
     position: fixed;
     top: 0;
     left: 0;
     z-index: 1;
     width: 100%;
-    border-bottom: 5px solid #ffffff;
+  
 }
+
 .wrapper-landing-header-2{
        border-bottom: 1px solid #c6ccd1; 
   min-height: 88px;
@@ -150,7 +152,7 @@ body a{
     border: none;  
 }
 .wrapper-landing-header-2 .navbar ul{
-    margin-top :19px;
+    margin-top :16px;
     
     
 }
@@ -189,13 +191,13 @@ body a{
 /* Landing Section Our Missions */
 
 .wrapper-our-missions{
-     padding-top: 20px;
-    min-height: 400px;
-    background-color: #e6ebef;
+   background-color: #e6ebef;
+    min-height: 350px;
+    padding-top: 0;
 }
 .wrapper-our-missions h1{
   color: #4a575b;
-    font-size: 1.61em;
+    font-size: 23px;
     font-weight: 700;
     margin: 0;
     text-transform: uppercase;
@@ -248,7 +250,7 @@ background-position: 0 8px;
 
 .wrapper-section-features h1{
    color: #4a575b;
-    font-size: 1.61em;
+    font-size: 23px;
     font-weight: 700;
     margin: 0;
     text-transform: uppercase;
@@ -299,13 +301,13 @@ background-image: url("../images/orange-strip.png");
     background-color: #e6ebef; 
     text-align: center;
     
-    padding-top: 25px;
+    padding-top: 40px;
     padding-bottom: 30px;
 }
 
 .wrapper-Hubs-listings h1{
     color: #4a575b;
-    font-size: 1.61em;
+    font-size: 23px;
     font-weight: 700;
     margin:  0;
     text-transform: uppercase;
@@ -361,7 +363,7 @@ background-position: 0 8px;
 .wrapper-section-map-view h1{
       
     color: #4a575b;
-    font-size: 1.61em;
+    font-size: 23px;
     font-weight: 700;
       text-align: center;
      margin:  0;
@@ -442,7 +444,7 @@ background-position: 0 8px;
 .wrapper-People-talk h1 {
   
     color: #4a575b;
-    font-size: 1.61em;
+    font-size: 23px;
     font-weight: 700;
       text-align: center;
      margin:  0;
@@ -690,14 +692,19 @@ margin-right: 3px;
   
 }
 
+.google-maps img {
+    
+    height: 330px;
+    width: 100%;
+}
+
 
 
 /* landing footer end */
 
-/* Messages Side Bar */
+/* Messages content */
 
-
-/* Messages Side Bar ends here  */
+/* Messages content ends here  */
 
 @media (max-width: 480px) {
 
