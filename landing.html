@@ -587,10 +587,10 @@ $(function(){
     $(window).scroll(function(){
             if( $(window).scrollTop() > stickyHeaderTop ) {
                     $('#second-menu').css({position: 'fixed', top: '0px'});
-                    $('.hide-on-fixed').css('opacity', '0');
+                    $('.hide-on-fixed').css('display', 'none');
             } else {
                     $('#second-menu').css({position: 'static', top: '600px'});
-                    $('.hide-on-fixed').css('opacity', '1');
+                    $('.hide-on-fixed').css('display', 'block');
             }
     }); 
  });
