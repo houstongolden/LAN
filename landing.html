@@ -96,15 +96,16 @@ google.maps.event.addDomListener(window, 'load', initialize);
     // whether that's below the form
     if (y >= top) {
       // if so, ad the fixed class
-       $('#second-menu').fadeIn();
+       
+     
       $('#second-menu').addClass('fixed');
-   
+      
 
     } else {
       // otherwise remove it
-           $('#second-menu').fadeOut();
+  
       $('#second-menu').removeClass('fixed');
-   $('#second-menu').removeClass('fixed');
+    
 
     }
   });
@@ -189,8 +190,8 @@ google.maps.event.addDomListener(window, 'load', initialize);
       
       
       <ul class="nav navbar-nav navbar-right">
-          <li class="hide-on-fixed"><a href="#hubsandlistings">hubs and listings</a></li>
-        <li class="hide-on-fixed"><a href="#explore-map">explore map</a></li>
+          <li><a href="#hubsandlistings">hubs and listings</a></li>
+        <li ><a href="#explore-map">explore map</a></li>
         <li class="sign-in"><a href="#">sign in</a></li>
         <li class="sign-up"><a href="#">sign up</a></li>
       </ul>
