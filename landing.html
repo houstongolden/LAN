@@ -1,620 +1,423 @@
 <!DOCTYPE html>
-<!-- saved from url=(0034)http://ildarkamalov.github.io/HUB/ -->
-<html><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Hubify - Landing</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="js/jquery.js" type="text/javascript"/></script>
-<script src="js/bootstrap.js" type="text/javascript"/></script>
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-<link type="text/css" href="css/style.css" rel="stylesheet"/>
-  <!-- FontAwesome -->
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
-  <link rel="icon" type="image/png" href="images/favicon-2.png">
-   <!--[if lt IE 9]>
+<html>
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="" name="description">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css"><!-- FontAwesome -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="images/favicon-2.png" rel="icon" type="image/png">
+    <!--[if lt IE 9]>
     <script src="assets/html5shiv/html5shiv.min.js"></script>
-  <![endif]-->
-   <script src="http://maps.googleapis.com/maps/api/js"></script>
-<script src="http://google-maps-utility-library-v3.googlecode.com/svn/trunk/infobubble/src/infobubble.js"> </script>
-   <script>
-var myCenter=new google.maps.LatLng(-37.81411, 144.96327999999999);
+    <![endif]-->
 
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+    <script src="http://google-maps-utility-library-v3.googlecode.com/svn/trunk/infobubble/src/infobubble.js"></script>
+    <script src="js/jquery.js" type="text/javascript"></script>
+    <script src="js/bootstrap.js" type="text/javascript"></script>
+    <script src="js/landing.js"></script>
+</head>
 
-function initialize()
-{
+<body>
+<header>
+    <section class="wrapper-landing-header">
+        <!--landing  header -->
 
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-xs-12 col-sm-12 col-md-12">
+                    <nav class="navbar navbar-default">
+                        <div class="container-fluid">
+                            <!-- Brand and toggle get grouped for better mobile display -->
 
-
-
-var mapProp = {
- center:myCenter,
- zoom:15,
- mapTypeId:google.maps.MapTypeId.ROADMAP
- };
-
-var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
-var image = 'images/maker.png';
-var marker=new google.maps.Marker({
- position:myCenter,
- icon: image
- 
- });
- 
-  infoBubble = new InfoBubble({
-         maxWidth: 300
-       });
-
-infoBubble = new InfoBubble({
-     map: map,
-     content: '<div class="mylabel"><h4>Почтовый адрес </h4> <p> 423800, Татарстан, г. Набережные Челны, район БСИ, промзона, ул<p> <h4>Почтовый адрес </h4> <p> 423800, Татарстан, г. Набережные Челны, район БСИ, промзона, ул<p> </div>',
-     shadowStyle: 1,
-     padding: 0,
-     backgroundColor: '#00518f',
-     borderRadius: 5,
-     arrowSize: 10,
-     borderWidth: 1,
- minWidth:300,
-minHeight:300,
-     borderColor: '#2c2c2c',
-     disableAutoPan: false,
-     hideCloseButton: true,
-     arrowPosition: 30,
-  arrowPosition: 7,
-           backgroundClassName: 'phoney',
-           pixelOffset: new google.maps.Size(800, 720),
-     backgroundClassName: 'transparent',
-     arrowStyle: 2
-   });
-  google.maps.event.addListener(marker, 'click', function() {
-   infoBubble.open(map, marker);
- });
-
-marker.setMap(map);
-map.setOptions({styles: styles});
-}
-
-google.maps.event.addDomListener(window, 'load', initialize);
-
-</script>
-
-
-<script type="text/javascript">
-    
-
-
-    $(document).ready(function(){
-        var top = $('#second-menu').offset().top - parseFloat($('#second-menu').css('marginTop').replace(/auto/, 100));
-	   $(window).bind('scroll', function() {
-               var y = $(this).scrollTop();
-	
-			 if (y >= top) {
-				 $('#second-menu').addClass('fixed');
-			 }
-			 else {
-				 $('#second-menu').removeClass('fixed');
-			 }
-		});
-	});
-    
-  /*  $(document).ready(function () {  
-  var top = $('#second-menu').offset().top - parseFloat($('#second-menu').css('marginTop').replace(/auto/, 100));
-  $(window).scroll(function (event) {
-    // what the y position of the scroll is
-    var y = $(this).scrollTop();
-
-    // whether that's below the form
-    if (y >= top) {
-      // if so, ad the fixed class
-      $('#second-menu').addClass('fixed');
-      
-       
-     
-     
-    } else {
-      // otherwise remove it
-      $('#second-menu').removeClass('fixed');
-    
-      }
-  });
-}); */
-    
-</script>
-
-    </head>
-    
-    
-    <body>
-        
-        
-        <header>
-            
-         <section class="wrapper-landing-header"><!--landing  header -->   
-   
-     
-                <div class="container">
-                    
-                    
-                         <div class="row"> 
-                           <div class="col-lg-12 col-xs-12 col-sm-12 col-md-12">
-             <nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle yay-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-        <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo"/></a><!--first logo --> 
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      
-      
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#hubsandlistings">hubs and listings</a></li>
-        <li><a href="#explore-map">explore map</a></li>
-        <li class="sign-in"><a href="#">sign in</a></li>
-        <li class="sign-up"><a href="#">sign up</a></li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
- <div class="banner-heading"> Build Your Marketplace </br> <a class="free-signup" href="#"> sign up for free </a> </div> 
-    
-                           </div> </div>
-                    <div class="center-block"> <a class="static-mao" href="#"></a> </div> 
-  </div>
-    
-             
-         </section><!--landing header--> 
-         <span id="hubsandlistings"></span>
-        
-            <section id="second-menu" class="wrapper-landing-header-2"><!--landing 2nd header --> 
-             
-                   <div class="container">
-                       
-                         <div class="row"> 
-                           <div class="col-lg-12 col-xs-12 col-sm-12 col-md-12">
-                       
-             <nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-        <a class="navbar-brand" href="#"><img src="images/logo-2.png" alt="logo"/></a><!--landing 2nd logo --> 
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
-      
-      
-      <ul class="nav navbar-nav navbar-right">
-          <li><a href="#hubsandlistings">hubs and listings</a></li>
-        <li ><a href="#explore-map">explore map</a></li>
-        <li class="sign-in"><a href="#">sign in</a></li>
-        <li class="sign-up"><a href="#">sign up</a></li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-                         </div>
-                         </div>      
-  </div> 
-                
-            
-            </section><!--landing 2nd header --> 
-               </header> 
-        
-            
-            
-            
-            
-            
-            
-        <section class="wrapper-Hubs-listings" ><!--landing section Hubs & listings -->
-       
-                    <div class="container">
-                        <div class="row">
-                            
-                            <div class="col-lg-12 col-xs-12 col-sm-12 col-md-12">
-                                <h1> <span> Hubs & listings </span> </h1> 
-                                <p>  Hubs and listings are social marketplaces for communities, cities, and colleges!<br/>
-They could be private and public. </p>
-                                <img class="img-responsive" src="images/screen-view.png" alt="screen-view" />
-                                <a class="open-listing-link" href="#"> open listing page </a>
+                            <div class="navbar-header">
+                                <button class="navbar-toggle yay-toggle collapsed" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <i class="material-icons">dehaze</i>
+                                </button>
+                                <a class="navbar-brand" href="#"><img alt="logo" src="images/logo.png"></a>
+                                <!--first logo -->
                             </div>
-                            
-                        </div>
-                    </div>
-            </section><!--landing section Hubs & listings -->
-            <section class="wrapper-section-features"><!--landing section our features-->
-               
-                    <div class="container">
-                        <div class="row">
-                            
-                            <div class="col-lg-12 col-xs-12 col-sm-12 col-md-12">
-                                
-                                <h1> <span> Features </span></h1>
-                            </div>   
-                            
-                        </div>
-                       
-                         <div class="row"> 
-                             <div class="col-lg-3 col-xs-6 col-sm-3 col-md-3">
-                                 
-        <div class="thumbnail"><!--home-->
-      <div class="caption">
-        <h3><i class="fa fa-home"></i> Home</h3>
-        <p>Browse your personal feed of listings using home page.</p>
-     
-      </div>
-    </div><!--home-->         
-                             </div>
-                               <div class="col-lg-3 col-xs-6 col-sm-3 col-md-3">
-                                 
-        <div class="thumbnail"><!--Hubs & listings-->
-      <div class="caption">
-        <h3><i class="fa fa-users"></i> Hubs & listings</h3>
-          <p>Browse your personal feed of listings using home page.</p>
-      </div>
-    </div><!--Hubs & listings-->         
-                             </div>
-                               <div class="col-lg-3 col-xs-6 col-sm-3 col-md-3">
-                                 
-        <div class="thumbnail"><!--Explore-->
-      <div class="caption">
-        <h3><i class="fa fa-globe"></i> Explore</h3>
-          <p>Discover amazing listings on our big blue map of the world.</p>
-      </div>
-    </div><!--Explore-->         
-                             </div>
-                               <div class="col-lg-3 col-xs-6 col-sm-3 col-md-3">
-                                 
-        <div class="thumbnail"><!--Cart-->
-      <div class="caption">
-        <h3><i class="fa fa-shopping-cart"></i> Cart</h3>
-          <p>Shop locally or globally and find amazing and profitable deals.
-</p>
-      </div>
-    </div><!--Cart-->         
-                             </div>
-                       
-                            
-                        
-                        
-                        
-                    </div>
-                    
-                    
-                    
-                </div>   
-                
-                
-                
-                
-            </section><!--landing section our features-->
-            
-             
-                <section class="wrapper-our-missions"><!--landing section our missions-->
-               
-                    <div class="container">
-                        <div class="row">
-                            
-                            <div class="col-lg-12 col-xs-12 col-sm-12 col-md-12">
-                                
-                                <h1> <span> Our missions </span> </h1>
-                            </div>   
-                            
-                        </div>
-                        
-                         <div class="row"> 
-                             <div class="col-lg-4 col-xs-12 col-sm-4 col-md-4">
-                                 
-        <div class="thumbnail"><!--Personal Payments-->
-            <a href="#"> <img src="images/file.png" alt="file"></a>
-      <div class="caption">
-        <h3>Personal Payments</h3>
-        <p>Get paid on your own terms. Whether you are trying to sell or rent something you own, offer your services for hire, offer a donation, or post your job offer, Hubify let's you unleash your money-making potential!</p>
-     
-      </div>
-    </div><!--Personal Payments-->
-                                 
-                                 
-                                 
-                                 
-                             </div>
-                         <div class="col-lg-4 col-xs-12 col-sm-4 col-md-4">
-                                 
-                                 
-                                  <div class="thumbnail"><!--Get Things Done-->
-                                      <a href="#"> <img src="images/hand.png" alt="hand"></a>
-      <div class="caption">
-        <h3>Get Things Done</h3>
-        <p>Social commerce just got easier. Selling your handmade creations, renting your bike to a traveler, or offering your professional services, Hubify helps you get things done with awesome social commerce technology.</p>
-       
-      </div>
-    </div><!--Get Things Done-->  
-                                 
-                                 
-                                 
-                             </div>
-                              <div class="col-lg-4 col-xs-12 col-sm-4 col-md-4">
-                                 
-                                 
-                                 
-            <div class="thumbnail"><!--Trust & Safety-->
-                <a href="#">   <img src="images/lock.png" alt="lock"></a> <span  id="explore-map"></span>
-      <div class="caption">
-        <h3>Trust & Safety</h3>
-        <p>Your safety is our top priority. Secure transactions, reviews and ratings, and our safety team protect you at every step. We have a commitment to building a safer community commerce platform for the next generation!</p>
-       
-      </div>
-    </div><!--Trust & Safety-->
-                                 
-                                 
-                             </div>
-                       
-                       
-                        
-                    </div>
-                    
-                     
-                    
-                </div>   
-                
-                
-                
-                
-            </section><!--landing section our missions-->
-            
-            
-             
-            
-            <section class="wrapper-section-map-view"><!--Landing Section Map View -->
-               
-                    <div class="container">
-                         <div class="row">
-                            
-                            <div class="col-lg-12 col-xs-12 col-sm-12 col-md-12">
-                                
-                                <h1> <span> Map View </span> </h1>
-                            </div>   
-                            
-                        </div>
-                        <section class="inner-section-map">
-                        <div class="row">
-                            
-                            <div class="col-lg-6 col-xs-12 col-sm-6 col-md-6 remove-padding-right">
-                                <div class="wraper-show-map">
-                                <h3> Cards are showed on the map </h3>
-                                <p>Do you want to look where there are goods, rentals, services, jobs or something else?
-There is an amazing possibility to find out everything you wand on our beautiful map</p>
-                                   <a class="show-map-link" href="#"> Show Map</a>
-                                </div>
-                            </div>
-                             <div class="col-lg-6 col-xs-12 col-sm-6 col-md-6 remove-padding-left">
-                              <div class="google-maps">
+                            <!-- Collect the nav links, forms, and other content for toggling -->
 
-                            <!--  <div id="googleMap"></div> -->
-                            
-                            <img class="" src="images/location-map.jpg" /> 
-                            
-</div>
-                            </div>
-                        </div>
-                            </section>
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li>
+                                        <a href="#hubsandlistings">hubs and listings</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#explore-map">explore map</a>
+                                    </li>
+
+                                    <li class="sign-in">
+                                        <a href="#">sign in</a>
+                                    </li>
+
+                                    <li class="sign-up">
+                                        <a href="#">sign up</a>
+                                    </li>
+                                </ul>
+                            </div><!-- /.navbar-collapse -->
+                        </div><!-- /.container-fluid -->
+                    </nav>
+
+                    <div class="banner-heading">
+                        <h1>Build Your Marketplace</h1><a class="free-signup" href="#">sign up for free</a>
                     </div>
-            </section><!--Landing Section Map View -->
-       
-        
-            <section class="wrapper-People-talk"><!--landing section About us-->
-               
-                    <div class="container">
-                        <div class="row">
-                            
-                            <div class="col-lg-12 col-xs-12 col-sm-12 col-md-12">
-                                
-                                <h1>  <span> People Talk About Us </span> </h1>
-                            </div>   
-                            
-                        </div>
-                         <div class="row"> 
-                             <div class="col-lg-4 col-xs-12 col-sm-4 col-md-4">
-                                 
-        <div class="thumbnail">
-            <div class="image-bcakground-1">
-                 <img alt="Lilly" src="images/Lilly.png">
-                
+                </div>
             </div>
-            
-     
-      <div class="caption">
-        <h3>Lilly Garrison</h3>
-        <p>I've been looking for boots that were reasonably priced and that would fit, came upon your site, ordered andreceived them today on Hubify.<br/>__</p>
-     
-      </div>
-    </div>
-                                 
-                                 
-                                 
-                                 
-                             </div>
-                         <div class="col-lg-4 col-xs-12 col-sm-4 col-md-4">
-                                 
-        <div class="thumbnail">
-       <div class="image-bcakground-2">
-                 <img alt="John" src="images/John.png">
-                
+
+            <div class="center-block">
+                <a class="static-mao" href="#second-menu"></a>
             </div>
-      <div class="caption">
-        <h3>John Green</h3>
-        <p>I've been looking for boots that were reasonably priced and that would fit, came upon your site, ordered andreceived them today on Hubify.<br/>__</p>
-     
-      </div>
-    </div>
-                                 
-                                 
-                                 
-                                 
-                             </div>
-                              <div class="col-lg-4 col-xs-12 col-sm-4 col-md-4">
-                                 
-        <div class="thumbnail">
-      <div class="image-bcakground-3">
-                 <img alt="Annete" src="images/Annete.png">
-                
+        </div>
+    </section><!--landing header--><span id="hubsandlistings"></span>
+
+    <section class="wrapper-landing-header-2" id="second-menu">
+        <!--landing 2nd header -->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-xs-12 col-sm-12 col-md-12">
+                    <nav class="navbar navbar-default">
+                        <div class="container-fluid">
+                            <!-- Brand and toggle get grouped for better mobile display -->
+
+                            <div class="navbar-header">
+                                <button class="navbar-toggle collapsed" data-target="#bs-example-navbar-collapse-2" data-toggle="collapse" type="button"><span class="sr-only">Toggle navigation</span> <i class=
+                                                                                                                                                                                                                   "material-icons">dehaze</i></button> <a class="navbar-brand" href="#"><img alt="logo" src="images/logo-2.png"></a> <!--landing 2nd logo -->
+                            </div><!-- Collect the nav links, forms, and other content for toggling -->
+
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li>
+                                        <a href="#hubsandlistings">hubs and listings</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#explore-map">explore map</a>
+                                    </li>
+
+                                    <li class="sign-in">
+                                        <a href="#">sign in</a>
+                                    </li>
+
+                                    <li class="sign-up">
+                                        <a href="#">sign up</a>
+                                    </li>
+                                </ul>
+                            </div><!-- /.navbar-collapse -->
+                        </div><!-- /.container-fluid -->
+                    </nav>
+                </div>
             </div>
-      <div class="caption">
-        <h3>Annete Cait</h3>
-        <p>I've been looking for boots that were reasonably priced and that would fit, came upon your site, ordered andreceived them today on Hubify.<br/>__</p>
-     
-      </div>
+        </div>
+    </section><!--landing 2nd header -->
+    <!--This div for prevent jerk of content-->
+
+    <div class="wrapper-height"></div>
+</header>
+
+<section class="wrapper-Hubs-listings" id="Hubs-listings">
+    <!--landing section Hubs & listings -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-xs-12 col-sm-12 col-md-12">
+                <h1><span>Hubs & listings</span></h1>
+
+                <p>Hubs and listings are social marketplaces for communities, cities, and colleges!<br>
+                    They could be private and public.</p><img alt="screen-view" class="img-responsive" src="images/screen-view.png"> <a class="open-listing-link" href="#">open listing page</a>
+            </div>
+        </div>
     </div>
-                                 
-                                 
-                                 
-                                 
-                             </div>
-                           
-                        
-                        
-                        
-                    </div>
-                    
-                    
-                    
-                </div>   
-                
-                
-                
-                
-            </section><!--landing section About us-->
-            
-            
-            
-            
-             <section class="wrapper-try-Hubify"><!--landing section Try Hubify-->
-               
-                    <div class="container">
-                       
-                         <div class="row"> 
-                             <div class="col-lg-12 col-xs-12 col-sm-12 col-md-12">
-     
-                                 
-                                Try Hubify Now </br> <a class="try-hubify-signup" href="#"> sign up  </a> 
-                                 
-                                 
-                             </div>
-                     
-                    </div>
-                    
-                </div>   
-                
-                
-            </section><!--landing section Try Hubify-->
-            
-            
-            <footer class="wrapper-landing-footer">
-                
-                <div class="container">
-                       
-                    <div class="row"> 
-                             <div class="col-lg-12 col-xs-12 col-sm-12 col-md-12">
-                                 <a href="#">  <img src="images/footer-logo.png" alt="footer-logo" class="center-block"/></a>
-                             </div>
-                     
-                        
-                    </div>
-                    
-                    <section class="wrapper-footer-items">
-                    <div class="row"> 
-                        <div class="col-lg-4 col-xs-4 col-sm-4 col-md-4">
-                           
-                            
-                            <div class="company-heading"><span> Company </span><br/>
-                            
-                            <a href="#"> Blog   </a><br/>
-                            <a href="#">  About </a><br/>
-                            <a href="#">  Contact </a><br/>
-                            <a href="#">  Jobs  </a>
-                            
-                            
-                             </div>
-                            
-                            
-                            
-                        </div>    
-                             <div class="col-lg-4 col-xs-4 col-sm-4 col-md-4">
-                                 <div class="discover-heading"><span> Discover </span> <br/>
-                                
-                                 <a href="#"> Listings     </a><br/>
-                            <a href="#"> Hubs  </a><br/>
-                            <a href="#">  How To Buy? </a><br/>
-                            <a href="#">  Buyer Safety </a>
-                                 
-                                 </div>
-                                 
-                        </div> 
-                         <div class="col-lg-4 col-xs-4 col-sm-4 col-md-4">
-                             <div class="make-money-heading"><span> Make Money </span><br/> 
-                             <a href="#">How To List  </a><br/>
-                            <a href="#">  How to Get Paid  </a><br/>
-                            <a href="#"> How To Apply For Jobs </a><br/>
-                            <a href="#"> How To Hire Freelancers </a>
-                              </div>
-                        </div> 
-                        </div>
-                        
-                       <div class="landing-footer-social-icons">
-                            <div class="pull-left">  <a class="landing-facebook" href="#"><img src="images/facebook.png" alt="facebook"  /></a></div>
-                            <div class="pull-left"><a class="landing-youtube" href="#"><img src="images/youtube.png" alt="youtube"  /></a></div>
-                            <div class="pull-left"><a class="landing-pinterest" href="#"><img src="images/pinterest.png" alt="pinterest"  /></a></div>
-                            <div class="pull-left"><a class="landing-cam" href="#"><img src="images/cam.png" alt="cam"  /></a></div>
-                           <div class="pull-left"> <a class="landing-twitter" href="#"><img src="images/twitter.png" alt="twitter"  /></a></div>
-                            
-                            
-                            
-                        </div>
-                        
-                        </section>
-                </div>   
-                
-                
-                <script type="text/javascript">
-        
-                    $(function() {
-  $('a[href*=#]:not([href=#])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html,body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
-        return false;
-      }
-    }
-  });
-});
+</section><!--landing section Hubs & listings -->
 
+<section class="wrapper-section-features">
+    <!--landing section our features-->
 
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-xs-12 col-sm-12 col-md-12">
+                <h1><span>Features</span></h1>
+            </div>
+        </div>
 
-                    </script>
-                
-            </footer>       
-            
-            
-            
-    </body>
+        <div class="row">
+            <div class="col-lg-3 col-xs-6 col-sm-3 col-md-3">
+                <div class="thumbnail">
+                    <!--home-->
+
+                    <div class="caption">
+                        <h3><i class="fa fa-home"></i> Home</h3>
+
+                        <p>Browse your personal feed of listings using home page.</p>
+                    </div>
+                </div><!--home-->
+            </div>
+
+            <div class="col-lg-3 col-xs-6 col-sm-3 col-md-3">
+                <div class="thumbnail">
+                    <!--Hubs & listings-->
+
+                    <div class="caption">
+                        <h3><i class="fa fa-users"></i> Hubs & listings</h3>
+
+                        <p>Browse your personal feed of listings using home page.</p>
+                    </div>
+                </div><!--Hubs & listings-->
+            </div>
+
+            <div class="col-lg-3 col-xs-6 col-sm-3 col-md-3">
+                <div class="thumbnail">
+                    <!--Explore-->
+
+                    <div class="caption">
+                        <h3><i class="fa fa-globe"></i> Explore</h3>
+
+                        <p>Discover amazing listings on our big blue map of the world.</p>
+                    </div>
+                </div><!--Explore-->
+            </div>
+
+            <div class="col-lg-3 col-xs-6 col-sm-3 col-md-3">
+                <div class="thumbnail">
+                    <!--Cart-->
+
+                    <div class="caption">
+                        <h3><i class="fa fa-shopping-cart"></i> Cart</h3>
+
+                        <p>Shop locally or globally and find amazing and profitable deals.</p>
+                    </div>
+                </div><!--Cart-->
+            </div>
+        </div>
+    </div>
+</section><!--landing section our features-->
+
+<section class="wrapper-our-missions">
+    <!--landing section our missions-->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-xs-12 col-sm-12 col-md-12">
+                <h1><span>Our missions</span></h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4 col-xs-12 col-sm-4 col-md-4">
+                <div class="thumbnail">
+                    <!--Personal Payments-->
+                    <a href="#"><img alt="file" src="images/file.png"></a>
+
+                    <div class="caption">
+                        <h3>Personal Payments</h3>
+
+                        <p>Get paid on your own terms. Whether you are trying to sell or rent something you own, offer your services for hire, offer a donation, or post your job offer, Hubify let's you unleash
+                            your money-making potential!</p>
+                    </div>
+                </div><!--Personal Payments-->
+            </div>
+
+            <div class="col-lg-4 col-xs-12 col-sm-4 col-md-4">
+                <div class="thumbnail">
+                    <!--Get Things Done-->
+                    <a href="#"><img alt="hand" src="images/hand.png"></a>
+
+                    <div class="caption">
+                        <h3>Get Things Done</h3>
+
+                        <p>Social commerce just got easier. Selling your handmade creations, renting your bike to a traveler, or offering your professional services, Hubify helps you get things done with
+                            awesome social commerce technology.</p>
+                    </div>
+                </div><!--Get Things Done-->
+            </div>
+
+            <div class="col-lg-4 col-xs-12 col-sm-4 col-md-4">
+                <div class="thumbnail">
+                    <!--Trust & Safety-->
+                    <a href="#"><img alt="lock" src="images/lock.png"></a> <span id="explore-map"></span>
+
+                    <div class="caption">
+                        <h3>Trust & Safety</h3>
+
+                        <p>Your safety is our top priority. Secure transactions, reviews and ratings, and our safety team protect you at every step. We have a commitment to building a safer community commerce
+                            platform for the next generation!</p>
+                    </div>
+                </div><!--Trust & Safety-->
+            </div>
+        </div>
+    </div>
+</section><!--landing section our missions-->
+
+<section class="wrapper-section-map-view">
+    <!--Landing Section Map View -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-xs-12 col-sm-12 col-md-12">
+                <h1><span>Map View</span></h1>
+            </div>
+        </div>
+
+        <section class="inner-section-map">
+            <div class="row">
+                <div class="col-lg-6 col-xs-12 col-sm-6 col-md-6 remove-padding-right">
+                    <div class="wraper-show-map">
+                        <h3>Cards are showed on the map</h3>
+
+                        <p>Do you want to look where there are goods, rentals, services, jobs or something else? There is an amazing possibility to find out everything you wand on our beautiful
+                            map</p><a class="show-map-link" href="#">Show Map</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-xs-12 col-sm-6 col-md-6 remove-padding-left">
+                    <div class="google-maps">
+                        <!--  <div id="googleMap"></div> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</section><!--Landing Section Map View -->
+
+<section class="wrapper-People-talk">
+    <!--landing section About us-->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-xs-12 col-sm-12 col-md-12">
+                <h1><span>People Talk About Us</span></h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4 col-xs-12 col-sm-4 col-md-4">
+                <div class="thumbnail">
+                    <div class="image-bcakground-1"><img alt="Lilly" src="images/Lilly.png"></div>
+
+                    <div class="caption">
+                        <h3>Lilly Garrison</h3>
+
+                        <p>I've been looking for boots that were reasonably priced and that would fit, came upon your site, ordered andreceived them today on Hubify.<br>
+                            __</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-xs-12 col-sm-4 col-md-4">
+                <div class="thumbnail">
+                    <div class="image-bcakground-2"><img alt="John" src="images/John.png"></div>
+
+                    <div class="caption">
+                        <h3>John Green</h3>
+
+                        <p>I've been looking for boots that were reasonably priced and that would fit, came upon your site, ordered andreceived them today on Hubify.<br>
+                            __</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-xs-12 col-sm-4 col-md-4">
+                <div class="thumbnail">
+                    <div class="image-bcakground-3"><img alt="Annete" src="images/Annete.png"></div>
+
+                    <div class="caption">
+                        <h3>Annete Cait</h3>
+
+                        <p>I've been looking for boots that were reasonably priced and that would fit, came upon your site, ordered andreceived them today on Hubify.<br>
+                            __</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section><!--landing section About us-->
+
+<section class="wrapper-try-Hubify">
+    <!--landing section Try Hubify-->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-xs-12 col-sm-12 col-md-12">
+                Try Hubify Now<br>
+                <a class="try-hubify-signup" href="#">sign up</a>
+            </div>
+        </div>
+    </div>
+</section><!--landing section Try Hubify-->
+
+<footer class="wrapper-landing-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-xs-12 col-sm-12 col-md-12">
+                <a href="#"><img alt="footer-logo" class="center-block" src="images/footer-logo.png"></a>
+            </div>
+        </div>
+
+        <section class="wrapper-footer-items">
+            <div class="row">
+                <div class="col-lg-4 col-xs-4 col-sm-4 col-md-4">
+                    <div class="company-heading">
+                        <span>Company</span><br>
+                        <a href="#">Blog</a><br>
+                        <a href="#">About</a><br>
+                        <a href="#">Contact</a><br>
+                        <a href="#">Jobs</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-xs-4 col-sm-4 col-md-4">
+                    <div class="discover-heading">
+                        <span>Discover</span><br>
+                        <a href="#">Listings</a><br>
+                        <a href="#">Hubs</a><br>
+                        <a href="#">How To Buy?</a><br>
+                        <a href="#">Buyer Safety</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-xs-4 col-sm-4 col-md-4">
+                    <div class="make-money-heading">
+                        <span>Make Money</span><br>
+                        <a href="#">How To List</a><br>
+                        <a href="#">How to Get Paid</a><br>
+                        <a href="#">How To Apply For Jobs</a><br>
+                        <a href="#">How To Hire Freelancers</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="landing-footer-social-icons">
+                <div class="pull-left">
+                    <a class="landing-facebook" href="#"><img alt="facebook" src="images/facebook.png"></a>
+                </div>
+
+                <div class="pull-left">
+                    <a class="landing-youtube" href="#"><img alt="youtube" src="images/youtube.png"></a>
+                </div>
+
+                <div class="pull-left">
+                    <a class="landing-pinterest" href="#"><img alt="pinterest" src="images/pinterest.png"></a>
+                </div>
+
+                <div class="pull-left">
+                    <a class="landing-cam" href="#"><img alt="cam" src="images/cam.png"></a>
+                </div>
+
+                <div class="pull-left">
+                    <a class="landing-twitter" href="#"><img alt="twitter" src="images/twitter.png"></a>
+                </div>
+            </div>
+        </section>
+    </div>
+</footer>
+</body>
 </html>
