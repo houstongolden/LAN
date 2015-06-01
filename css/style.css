@@ -203,17 +203,6 @@ body a {
     margin-bottom:0
 }
 
-/*.wrapper-height {*/
-    /*height:88px;*/
-    /*padding-bottom:40px;*/
-    /*background-color:#E6EBEF;*/
-    /*display:none*/
-/*}*/
-
-/*.wrapper-height.visible {*/
-    /*display:block*/
-/*}*/
-
 /* Landing Header ends here */
 /* Landing Section Our Missions */
 .wrapper-our-missions {
@@ -687,37 +676,39 @@ body a {
     width:216px
 }
 
-/*.wrapper-landing-footer .wrapper-footer-items .landing-footer-social-icons a img {*/
+.wrapper-landing-footer .wrapper-footer-items .landing-footer-social-icons a img {
     /*margin-top:-6.7%;*/
     /*width:62%;*/
     /*margin-left: 3%;*/
-/*}*/
+    width: 35px;
+    height: 35px;
+}
 
-.wrapper-landing-footer .wrapper-footer-items .landing-footer-social-icons .landing-facebook {
+.wrapper-landing-footer .wrapper-footer-items .landing-footer-social-icons .landing-facebook img{
     border:3px solid #3b5998
 }
 
-.wrapper-landing-footer .wrapper-footer-items .landing-footer-social-icons .landing-youtube {
+.wrapper-landing-footer .wrapper-footer-items .landing-footer-social-icons .landing-youtube img{
     border:3px solid #c02b29
 }
 
-.wrapper-landing-footer .wrapper-footer-items .landing-footer-social-icons .landing-pinterest {
+.wrapper-landing-footer .wrapper-footer-items .landing-footer-social-icons .landing-pinterest img{
     border:3px solid #cb211d
 }
 
-.wrapper-landing-footer .wrapper-footer-items .landing-footer-social-icons .landing-cam {
+.wrapper-landing-footer .wrapper-footer-items .landing-footer-social-icons .landing-cam img{
     border:3px solid #cd5959
 }
 
-.wrapper-landing-footer .wrapper-footer-items .landing-footer-social-icons .landing-twitter {
+.wrapper-landing-footer .wrapper-footer-items .landing-footer-social-icons .landing-twitter img{
     border:3px solid #56a3d9
 }
 
-.wrapper-landing-footer .wrapper-footer-items .landing-footer-social-icons a:hover {
+.wrapper-landing-footer .wrapper-footer-items .landing-footer-social-icons a:hover img{
     border:3px solid #716164
 }
 
-.wrapper-landing-footer .wrapper-footer-items .landing-footer-social-icons a:active,.wrapper-landing-footer .wrapper-footer-items .landing-footer-social-icons a:focus {
+.wrapper-landing-footer .wrapper-footer-items .landing-footer-social-icons img:active,.wrapper-landing-footer .wrapper-footer-items .landing-footer-social-icons img:focus {
     border:3px solid #d0ced2
 }
 
@@ -725,12 +716,12 @@ body a {
     padding:5px 0;
     outline:none;
     text-decoration:none;
-    margin-right:3px
+    margin-right:8px
 }
 
 /*TODO - delete this class then put real map*/
 .google-maps {
-    background-image:url(../images/location-map.jpg);
+    background-image:url(../images/map.png);
     height:330px;
     background-size:cover
 }
@@ -761,6 +752,16 @@ body a {
     .wrapper-landing-header .static-mao {
         bottom:3px
     }
+    /*.wrapper-landing-header-2 {*/
+        /*min-height: 75px;*/
+        /*height: 75px;*/
+    /*}*/
+    /*.wrapper-landing-header-2 .navbar-brand {*/
+        /*padding: 5px 15px;*/
+    /*}*/
+    /*.wrapper-landing-header-2 .navbar-toggle {*/
+        /*padding: 0px 10px;*/
+    /*}*/
 }
 
 @media (max-width: 767px) {

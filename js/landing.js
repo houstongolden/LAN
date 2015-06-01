@@ -47,7 +47,7 @@ function initialize() {
 google.maps.event.addDomListener(window, 'load', initialize);
 
 $(document).ready(function() {
-    var top = $('#Hubs-listings').offset().top;
+    var top = $('#Hubs-listings').offset().top - 120;
     $(window).scroll(function() {
         if ($(this).scrollTop() > top) {
             $('#second-menu').fadeIn();
@@ -74,8 +74,8 @@ $(function() {
     });
 });
 
-$('a[href^="Hubs-listings"]').on('click', function(event) {
-    var target = $($(this).attr('href'));
+$('a[href^="toBottom"]').on('click', function(event) {
+    var target = $($(this).attr('href')) - 120;
     if (target.length) {
         event.preventDefault();
         $('html, body').animate({
