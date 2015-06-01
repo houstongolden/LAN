@@ -50,11 +50,9 @@ $(document).ready(function() {
     var top = $('#Hubs-listings').offset().top;
     $(window).scroll(function() {
         if ($(this).scrollTop() > top) {
-            $('#second-menu').addClass('fixed');
-            $('.wrapper-height').addClass('visible');
+            $('#second-menu').fadeIn();
         } else {
-            $('#second-menu').removeClass('fixed');
-            $('.wrapper-height').removeClass('visible');
+            $('#second-menu').fadeOut();
         }
     });
 });
@@ -76,7 +74,7 @@ $(function() {
     });
 });
 
-$('a[href^="second-menu"]').on('click', function(event) {
+$('a[href^="Hubs-listings"]').on('click', function(event) {
     var target = $($(this).attr('href'));
     if (target.length) {
         event.preventDefault();

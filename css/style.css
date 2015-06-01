@@ -132,7 +132,8 @@ body a {
     margin-bottom:0
 }
 
-#second-menu.fixed {
+#second-menu {
+    display: none;
     position:fixed;
     top:0;
     left:0;
@@ -202,16 +203,16 @@ body a {
     margin-bottom:0
 }
 
-.wrapper-height {
-    height:88px;
-    padding-bottom:40px;
-    background-color:#E6EBEF;
-    display:none
-}
+/*.wrapper-height {*/
+    /*height:88px;*/
+    /*padding-bottom:40px;*/
+    /*background-color:#E6EBEF;*/
+    /*display:none*/
+/*}*/
 
-.wrapper-height.visible {
-    display:block
-}
+/*.wrapper-height.visible {*/
+    /*display:block*/
+/*}*/
 
 /* Landing Header ends here */
 /* Landing Section Our Missions */
@@ -309,6 +310,11 @@ body a {
 
 .wrapper-section-features .thumbnail h3 i {
     color:#ea7c10
+}
+.wrapper-section-features .thumbnail h3 i.material-icons {
+    font-size: 19px;
+    position: relative;
+    top: 3px;
 }
 
 .wrapper-section-features .thumbnail p {
@@ -683,7 +689,8 @@ body a {
 
 .wrapper-landing-footer .wrapper-footer-items .landing-footer-social-icons a img {
     margin-top:-6.7%;
-    width:62%
+    width:62%;
+    margin-left: 3%;
 }
 
 .wrapper-landing-footer .wrapper-footer-items .landing-footer-social-icons .landing-facebook {
