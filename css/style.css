@@ -689,7 +689,8 @@ body a {
 
 .wrapper-landing-footer .wrapper-footer-items .landing-footer-social-icons a img {
     margin-top:-6.7%;
-    width:62%
+    width:62%;
+    margin-left: 3%;
 }
 
 .wrapper-landing-footer .wrapper-footer-items .landing-footer-social-icons .landing-facebook {
